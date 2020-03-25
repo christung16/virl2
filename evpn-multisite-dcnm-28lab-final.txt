@@ -13,8 +13,8 @@ nodes:
     configuration: |2-
 
       !Command: show running-config
-      !Running configuration last done at: Wed Mar 25 08:22:28 2020
-      !Time: Wed Mar 25 08:22:31 2020
+      !Running configuration last done at: Wed Mar 25 09:27:47 2020
+      !Time: Wed Mar 25 09:27:49 2020
 
       version 9.2(3) Bios:version
       hostname site1-leaf2
@@ -33,271 +33,522 @@ nodes:
       ip domain-lookup
       snmp-server user admin network-admin auth md5 0x12dee40c1b7d8cc2496dd3d73be7549a priv 0x12dee40c1b7d8cc2496dd3d73be7549a localizedkey
       snmp-server user cisco network-admin auth md5 0x937be12e601b421033b225bb778584e1 priv 0x937be12e601b421033b225bb778584e1 localizedkey
-      rmon event 1 description FATAL(1) owner PMON@FATAL
-      rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
-      rmon event 3 description ERROR(3) owner PMON@ERRORcon
-      rmon event 4 description WARNING(4) owner PMON@WARNING
-      rmon event 5 description INFORMATION(5) owner PMON@INFO
 
       vlan 1
 
       vrf context management
 
       interface Ethernet1/1
+        no switchport
+        no shutdown
 
       interface Ethernet1/2
+        no switchport
+        no shutdown
 
       interface Ethernet1/3
+        no switchport
+        no shutdown
 
       interface Ethernet1/4
+        no switchport
+        no shutdown
 
       interface Ethernet1/5
+        no switchport
+        no shutdown
 
       interface Ethernet1/6
+        no switchport
+        no shutdown
 
       interface Ethernet1/7
+        no switchport
+        no shutdown
 
       interface Ethernet1/8
+        no switchport
+        no shutdown
 
       interface Ethernet1/9
+        no switchport
+        no shutdown
 
       interface Ethernet1/10
+        no switchport
+        no shutdown
 
       interface Ethernet1/11
+        no switchport
+        no shutdown
 
       interface Ethernet1/12
+        no switchport
+        no shutdown
 
       interface Ethernet1/13
+        no switchport
+        no shutdown
 
       interface Ethernet1/14
+        no switchport
+        no shutdown
 
       interface Ethernet1/15
+        no switchport
+        no shutdown
 
       interface Ethernet1/16
+        no switchport
+        no shutdown
 
       interface Ethernet1/17
+        no switchport
+        no shutdown
 
       interface Ethernet1/18
+        no switchport
+        no shutdown
 
       interface Ethernet1/19
+        no switchport
+        no shutdown
 
       interface Ethernet1/20
+        no switchport
+        no shutdown
 
       interface Ethernet1/21
+        no switchport
+        no shutdown
 
       interface Ethernet1/22
+        no switchport
+        no shutdown
 
       interface Ethernet1/23
+        no switchport
+        no shutdown
 
       interface Ethernet1/24
+        no switchport
+        no shutdown
 
       interface Ethernet1/25
+        no switchport
+        no shutdown
 
       interface Ethernet1/26
+        no switchport
+        no shutdown
 
       interface Ethernet1/27
+        no switchport
+        no shutdown
 
       interface Ethernet1/28
+        no switchport
+        no shutdown
 
       interface Ethernet1/29
+        no switchport
+        no shutdown
 
       interface Ethernet1/30
+        no switchport
+        no shutdown
 
       interface Ethernet1/31
+        no switchport
+        no shutdown
 
       interface Ethernet1/32
+        no switchport
+        no shutdown
 
       interface Ethernet1/33
+        no switchport
+        no shutdown
 
       interface Ethernet1/34
+        no switchport
+        no shutdown
 
       interface Ethernet1/35
+        no switchport
+        no shutdown
 
       interface Ethernet1/36
+        no switchport
+        no shutdown
 
       interface Ethernet1/37
+        no switchport
+        no shutdown
 
       interface Ethernet1/38
+        no switchport
+        no shutdown
 
       interface Ethernet1/39
+        no switchport
+        no shutdown
 
       interface Ethernet1/40
+        no switchport
+        no shutdown
 
       interface Ethernet1/41
+        no switchport
+        no shutdown
 
       interface Ethernet1/42
+        no switchport
+        no shutdown
 
       interface Ethernet1/43
+        no switchport
+        no shutdown
 
       interface Ethernet1/44
+        no switchport
+        no shutdown
 
       interface Ethernet1/45
+        no switchport
+        no shutdown
 
       interface Ethernet1/46
+        no switchport
+        no shutdown
 
       interface Ethernet1/47
+        no switchport
+        no shutdown
 
       interface Ethernet1/48
+        no switchport
+        no shutdown
 
       interface Ethernet1/49
+        no switchport
+        no shutdown
 
       interface Ethernet1/50
+        no switchport
+        no shutdown
 
       interface Ethernet1/51
+        no switchport
+        no shutdown
 
       interface Ethernet1/52
+        no switchport
+        no shutdown
 
       interface Ethernet1/53
+        no switchport
+        no shutdown
 
       interface Ethernet1/54
+        no switchport
+        no shutdown
 
       interface Ethernet1/55
+        no switchport
+        no shutdown
 
       interface Ethernet1/56
+        no switchport
+        no shutdown
 
       interface Ethernet1/57
+        no switchport
+        no shutdown
 
       interface Ethernet1/58
+        no switchport
+        no shutdown
 
       interface Ethernet1/59
+        no switchport
+        no shutdown
 
       interface Ethernet1/60
+        no switchport
+        no shutdown
 
       interface Ethernet1/61
+        no switchport
+        no shutdown
 
       interface Ethernet1/62
+        no switchport
+        no shutdown
 
       interface Ethernet1/63
+        no switchport
+        no shutdown
 
       interface Ethernet1/64
+        no switchport
+        no shutdown
 
       interface Ethernet1/65
+        no switchport
+        no shutdown
 
       interface Ethernet1/66
+        no switchport
+        no shutdown
 
       interface Ethernet1/67
+        no switchport
+        no shutdown
 
       interface Ethernet1/68
+        no switchport
+        no shutdown
 
       interface Ethernet1/69
+        no switchport
+        no shutdown
 
       interface Ethernet1/70
+        no switchport
+        no shutdown
 
       interface Ethernet1/71
+        no switchport
+        no shutdown
 
       interface Ethernet1/72
+        no switchport
+        no shutdown
 
       interface Ethernet1/73
+        no switchport
+        no shutdown
 
       interface Ethernet1/74
+        no switchport
+        no shutdown
 
       interface Ethernet1/75
+        no switchport
+        no shutdown
 
       interface Ethernet1/76
+        no switchport
+        no shutdown
 
       interface Ethernet1/77
+        no switchport
+        no shutdown
 
       interface Ethernet1/78
+        no switchport
+        no shutdown
 
       interface Ethernet1/79
+        no switchport
+        no shutdown
 
       interface Ethernet1/80
+        no switchport
+        no shutdown
 
       interface Ethernet1/81
+        no switchport
+        no shutdown
 
       interface Ethernet1/82
+        no switchport
+        no shutdown
 
       interface Ethernet1/83
+        no switchport
+        no shutdown
 
       interface Ethernet1/84
+        no switchport
+        no shutdown
 
       interface Ethernet1/85
+        no switchport
+        no shutdown
 
       interface Ethernet1/86
+        no switchport
+        no shutdown
 
       interface Ethernet1/87
+        no switchport
+        no shutdown
 
       interface Ethernet1/88
+        no switchport
+        no shutdown
 
       interface Ethernet1/89
+        no switchport
+        no shutdown
 
       interface Ethernet1/90
+        no switchport
+        no shutdown
 
       interface Ethernet1/91
+        no switchport
+        no shutdown
 
       interface Ethernet1/92
+        no switchport
+        no shutdown
 
       interface Ethernet1/93
+        no switchport
+        no shutdown
 
       interface Ethernet1/94
+        no switchport
+        no shutdown
 
       interface Ethernet1/95
+        no switchport
+        no shutdown
 
       interface Ethernet1/96
+        no switchport
+        no shutdown
 
       interface Ethernet1/97
+        no switchport
+        no shutdown
 
       interface Ethernet1/98
+        no switchport
+        no shutdown
 
       interface Ethernet1/99
+        no switchport
+        no shutdown
 
       interface Ethernet1/100
+        no switchport
+        no shutdown
 
       interface Ethernet1/101
+        no switchport
+        no shutdown
 
       interface Ethernet1/102
+        no switchport
+        no shutdown
 
       interface Ethernet1/103
+        no switchport
+        no shutdown
 
       interface Ethernet1/104
+        no switchport
+        no shutdown
 
       interface Ethernet1/105
+        no switchport
+        no shutdown
 
       interface Ethernet1/106
+        no switchport
+        no shutdown
 
       interface Ethernet1/107
+        no switchport
+        no shutdown
 
       interface Ethernet1/108
+        no switchport
+        no shutdown
 
       interface Ethernet1/109
+        no switchport
+        no shutdown
 
       interface Ethernet1/110
+        no switchport
+        no shutdown
 
       interface Ethernet1/111
+        no switchport
+        no shutdown
 
       interface Ethernet1/112
+        no switchport
+        no shutdown
 
       interface Ethernet1/113
+        no switchport
+        no shutdown
 
       interface Ethernet1/114
+        no switchport
+        no shutdown
 
       interface Ethernet1/115
+        no switchport
+        no shutdown
 
       interface Ethernet1/116
+        no switchport
+        no shutdown
 
       interface Ethernet1/117
+        no switchport
+        no shutdown
 
       interface Ethernet1/118
+        no switchport
+        no shutdown
 
       interface Ethernet1/119
+        no switchport
+        no shutdown
 
       interface Ethernet1/120
+        no switchport
+        no shutdown
 
       interface Ethernet1/121
+        no switchport
+        no shutdown
 
       interface Ethernet1/122
+        no switchport
+        no shutdown
 
       interface Ethernet1/123
+        no switchport
+        no shutdown
 
       interface Ethernet1/124
+        no switchport
+        no shutdown
 
       interface Ethernet1/125
+        no switchport
+        no shutdown
 
       interface Ethernet1/126
+        no switchport
+        no shutdown
 
       interface Ethernet1/127
+        no switchport
+        no shutdown
 
       interface Ethernet1/128
+        no switchport
+        no shutdown
 
       interface mgmt0
         no cdp enable
@@ -394,8 +645,8 @@ nodes:
     configuration: |2-
 
       !Command: show running-config
-      !Running configuration last done at: Wed Mar 25 08:22:50 2020
-      !Time: Wed Mar 25 08:22:52 2020
+      !Running configuration last done at: Wed Mar 25 09:27:46 2020
+      !Time: Wed Mar 25 09:27:49 2020
 
       version 9.2(3) Bios:version
       hostname site1-bgwspine1
@@ -414,271 +665,522 @@ nodes:
       ip domain-lookup
       snmp-server user admin network-admin auth md5 0x1cdd73b0b1c0b31f2c92bb54776be5eb priv 0x1cdd73b0b1c0b31f2c92bb54776be5eb localizedkey
       snmp-server user cisco network-admin auth md5 0xca0368d0353c67c7c46cf8e63d714124 priv 0xca0368d0353c67c7c46cf8e63d714124 localizedkey
-      rmon event 1 description FATAL(1) owner PMON@FATAL
-      rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
-      rmon event 3 description ERROR(3) owner PMON@ERROR
-      rmon event 4 description WARNING(4) owner PMON@WARNING
-      rmon event 5 description INFORMATION(5) owner PMON@INFO
 
       vlan 1
 
       vrf context management
 
       interface Ethernet1/1
+        no switchport
+        no shutdown
 
       interface Ethernet1/2
+        no switchport
+        no shutdown
 
       interface Ethernet1/3
+        no switchport
+        no shutdown
 
       interface Ethernet1/4
+        no switchport
+        no shutdown
 
       interface Ethernet1/5
+        no switchport
+        no shutdown
 
       interface Ethernet1/6
+        no switchport
+        no shutdown
 
       interface Ethernet1/7
+        no switchport
+        no shutdown
 
       interface Ethernet1/8
+        no switchport
+        no shutdown
 
       interface Ethernet1/9
+        no switchport
+        no shutdown
 
       interface Ethernet1/10
+        no switchport
+        no shutdown
 
       interface Ethernet1/11
+        no switchport
+        no shutdown
 
       interface Ethernet1/12
+        no switchport
+        no shutdown
 
       interface Ethernet1/13
+        no switchport
+        no shutdown
 
       interface Ethernet1/14
+        no switchport
+        no shutdown
 
       interface Ethernet1/15
+        no switchport
+        no shutdown
 
       interface Ethernet1/16
+        no switchport
+        no shutdown
 
       interface Ethernet1/17
+        no switchport
+        no shutdown
 
       interface Ethernet1/18
+        no switchport
+        no shutdown
 
       interface Ethernet1/19
+        no switchport
+        no shutdown
 
       interface Ethernet1/20
+        no switchport
+        no shutdown
 
       interface Ethernet1/21
+        no switchport
+        no shutdown
 
       interface Ethernet1/22
+        no switchport
+        no shutdown
 
       interface Ethernet1/23
+        no switchport
+        no shutdown
 
       interface Ethernet1/24
+        no switchport
+        no shutdown
 
       interface Ethernet1/25
+        no switchport
+        no shutdown
 
       interface Ethernet1/26
+        no switchport
+        no shutdown
 
       interface Ethernet1/27
+        no switchport
+        no shutdown
 
       interface Ethernet1/28
+        no switchport
+        no shutdown
 
       interface Ethernet1/29
+        no switchport
+        no shutdown
 
       interface Ethernet1/30
+        no switchport
+        no shutdown
 
       interface Ethernet1/31
+        no switchport
+        no shutdown
 
       interface Ethernet1/32
+        no switchport
+        no shutdown
 
       interface Ethernet1/33
+        no switchport
+        no shutdown
 
       interface Ethernet1/34
+        no switchport
+        no shutdown
 
       interface Ethernet1/35
+        no switchport
+        no shutdown
 
       interface Ethernet1/36
+        no switchport
+        no shutdown
 
       interface Ethernet1/37
+        no switchport
+        no shutdown
 
       interface Ethernet1/38
+        no switchport
+        no shutdown
 
       interface Ethernet1/39
+        no switchport
+        no shutdown
 
       interface Ethernet1/40
+        no switchport
+        no shutdown
 
       interface Ethernet1/41
+        no switchport
+        no shutdown
 
       interface Ethernet1/42
+        no switchport
+        no shutdown
 
       interface Ethernet1/43
+        no switchport
+        no shutdown
 
       interface Ethernet1/44
+        no switchport
+        no shutdown
 
       interface Ethernet1/45
+        no switchport
+        no shutdown
 
       interface Ethernet1/46
+        no switchport
+        no shutdown
 
       interface Ethernet1/47
+        no switchport
+        no shutdown
 
       interface Ethernet1/48
+        no switchport
+        no shutdown
 
       interface Ethernet1/49
+        no switchport
+        no shutdown
 
       interface Ethernet1/50
+        no switchport
+        no shutdown
 
       interface Ethernet1/51
+        no switchport
+        no shutdown
 
       interface Ethernet1/52
+        no switchport
+        no shutdown
 
       interface Ethernet1/53
+        no switchport
+        no shutdown
 
       interface Ethernet1/54
+        no switchport
+        no shutdown
 
       interface Ethernet1/55
+        no switchport
+        no shutdown
 
       interface Ethernet1/56
+        no switchport
+        no shutdown
 
       interface Ethernet1/57
+        no switchport
+        no shutdown
 
       interface Ethernet1/58
+        no switchport
+        no shutdown
 
       interface Ethernet1/59
+        no switchport
+        no shutdown
 
       interface Ethernet1/60
+        no switchport
+        no shutdown
 
       interface Ethernet1/61
+        no switchport
+        no shutdown
 
       interface Ethernet1/62
+        no switchport
+        no shutdown
 
       interface Ethernet1/63
+        no switchport
+        no shutdown
 
       interface Ethernet1/64
+        no switchport
+        no shutdown
 
       interface Ethernet1/65
+        no switchport
+        no shutdown
 
       interface Ethernet1/66
+        no switchport
+        no shutdown
 
       interface Ethernet1/67
+        no switchport
+        no shutdown
 
       interface Ethernet1/68
+        no switchport
+        no shutdown
 
       interface Ethernet1/69
+        no switchport
+        no shutdown
 
       interface Ethernet1/70
+        no switchport
+        no shutdown
 
       interface Ethernet1/71
+        no switchport
+        no shutdown
 
       interface Ethernet1/72
+        no switchport
+        no shutdown
 
       interface Ethernet1/73
+        no switchport
+        no shutdown
 
       interface Ethernet1/74
+        no switchport
+        no shutdown
 
       interface Ethernet1/75
+        no switchport
+        no shutdown
 
       interface Ethernet1/76
+        no switchport
+        no shutdown
 
       interface Ethernet1/77
+        no switchport
+        no shutdown
 
       interface Ethernet1/78
+        no switchport
+        no shutdown
 
       interface Ethernet1/79
+        no switchport
+        no shutdown
 
       interface Ethernet1/80
+        no switchport
+        no shutdown
 
       interface Ethernet1/81
+        no switchport
+        no shutdown
 
       interface Ethernet1/82
+        no switchport
+        no shutdown
 
       interface Ethernet1/83
+        no switchport
+        no shutdown
 
       interface Ethernet1/84
+        no switchport
+        no shutdown
 
       interface Ethernet1/85
+        no switchport
+        no shutdown
 
       interface Ethernet1/86
+        no switchport
+        no shutdown
 
       interface Ethernet1/87
+        no switchport
+        no shutdown
 
       interface Ethernet1/88
+        no switchport
+        no shutdown
 
       interface Ethernet1/89
+        no switchport
+        no shutdown
 
       interface Ethernet1/90
+        no switchport
+        no shutdown
 
       interface Ethernet1/91
+        no switchport
+        no shutdown
 
       interface Ethernet1/92
+        no switchport
+        no shutdown
 
       interface Ethernet1/93
+        no switchport
+        no shutdown
 
       interface Ethernet1/94
+        no switchport
+        no shutdown
 
       interface Ethernet1/95
+        no switchport
+        no shutdown
 
       interface Ethernet1/96
+        no switchport
+        no shutdown
 
       interface Ethernet1/97
+        no switchport
+        no shutdown
 
       interface Ethernet1/98
+        no switchport
+        no shutdown
 
       interface Ethernet1/99
+        no switchport
+        no shutdown
 
       interface Ethernet1/100
+        no switchport
+        no shutdown
 
       interface Ethernet1/101
+        no switchport
+        no shutdown
 
       interface Ethernet1/102
+        no switchport
+        no shutdown
 
       interface Ethernet1/103
+        no switchport
+        no shutdown
 
       interface Ethernet1/104
+        no switchport
+        no shutdown
 
       interface Ethernet1/105
+        no switchport
+        no shutdown
 
       interface Ethernet1/106
+        no switchport
+        no shutdown
 
       interface Ethernet1/107
+        no switchport
+        no shutdown
 
       interface Ethernet1/108
+        no switchport
+        no shutdown
 
       interface Ethernet1/109
+        no switchport
+        no shutdown
 
       interface Ethernet1/110
+        no switchport
+        no shutdown
 
       interface Ethernet1/111
+        no switchport
+        no shutdown
 
       interface Ethernet1/112
+        no switchport
+        no shutdown
 
       interface Ethernet1/113
+        no switchport
+        no shutdown
 
       interface Ethernet1/114
+        no switchport
+        no shutdown
 
       interface Ethernet1/115
+        no switchport
+        no shutdown
 
       interface Ethernet1/116
+        no switchport
+        no shutdown
 
       interface Ethernet1/117
+        no switchport
+        no shutdown
 
       interface Ethernet1/118
+        no switchport
+        no shutdown
 
       interface Ethernet1/119
+        no switchport
+        no shutdown
 
       interface Ethernet1/120
+        no switchport
+        no shutdown
 
       interface Ethernet1/121
+        no switchport
+        no shutdown
 
       interface Ethernet1/122
+        no switchport
+        no shutdown
 
       interface Ethernet1/123
+        no switchport
+        no shutdown
 
       interface Ethernet1/124
+        no switchport
+        no shutdown
 
       interface Ethernet1/125
+        no switchport
+        no shutdown
 
       interface Ethernet1/126
+        no switchport
+        no shutdown
 
       interface Ethernet1/127
+        no switchport
+        no shutdown
 
       interface Ethernet1/128
+        no switchport
+        no shutdown
 
       interface mgmt0
         no cdp enable
@@ -727,8 +1229,8 @@ nodes:
     configuration: |2-
 
       !Command: show running-config
-      !Running configuration last done at: Wed Mar 25 08:22:52 2020
-      !Time: Wed Mar 25 08:22:54 2020
+      !Running configuration last done at: Wed Mar 25 09:27:46 2020
+      !Time: Wed Mar 25 09:27:48 2020
 
       version 9.2(3) Bios:version
       hostname site1-bgwspine2
@@ -747,271 +1249,522 @@ nodes:
       ip domain-lookup
       snmp-server user admin network-admin auth md5 0x1073ec46903ddbeb48fe1a1e026799fd priv 0x1073ec46903ddbeb48fe1a1e026799fd localizedkey
       snmp-server user cisco network-admin auth md5 0x4f235fde82353cf3ea578ae3b8f9af24 priv 0x4f235fde82353cf3ea578ae3b8f9af24 localizedkey
-      rmon event 1 description FATAL(1) owner PMON@FATAL
-      rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
-      rmon event 3 description ERROR(3) owner PMON@ERROR
-      rmon event 4 description WARNING(4) owner PMON@WARNING
-      rmon event 5 description INFORMATION(5) owner PMON@INFO
 
       vlan 1
 
       vrf context management
 
       interface Ethernet1/1
+        no switchport
+        no shutdown
 
       interface Ethernet1/2
+        no switchport
+        no shutdown
 
       interface Ethernet1/3
+        no switchport
+        no shutdown
 
       interface Ethernet1/4
+        no switchport
+        no shutdown
 
       interface Ethernet1/5
+        no switchport
+        no shutdown
 
       interface Ethernet1/6
+        no switchport
+        no shutdown
 
       interface Ethernet1/7
+        no switchport
+        no shutdown
 
       interface Ethernet1/8
+        no switchport
+        no shutdown
 
       interface Ethernet1/9
+        no switchport
+        no shutdown
 
       interface Ethernet1/10
+        no switchport
+        no shutdown
 
       interface Ethernet1/11
+        no switchport
+        no shutdown
 
       interface Ethernet1/12
+        no switchport
+        no shutdown
 
       interface Ethernet1/13
+        no switchport
+        no shutdown
 
       interface Ethernet1/14
+        no switchport
+        no shutdown
 
       interface Ethernet1/15
+        no switchport
+        no shutdown
 
       interface Ethernet1/16
+        no switchport
+        no shutdown
 
       interface Ethernet1/17
+        no switchport
+        no shutdown
 
       interface Ethernet1/18
+        no switchport
+        no shutdown
 
       interface Ethernet1/19
+        no switchport
+        no shutdown
 
       interface Ethernet1/20
+        no switchport
+        no shutdown
 
       interface Ethernet1/21
+        no switchport
+        no shutdown
 
       interface Ethernet1/22
+        no switchport
+        no shutdown
 
       interface Ethernet1/23
+        no switchport
+        no shutdown
 
       interface Ethernet1/24
+        no switchport
+        no shutdown
 
       interface Ethernet1/25
+        no switchport
+        no shutdown
 
       interface Ethernet1/26
+        no switchport
+        no shutdown
 
       interface Ethernet1/27
+        no switchport
+        no shutdown
 
       interface Ethernet1/28
+        no switchport
+        no shutdown
 
       interface Ethernet1/29
+        no switchport
+        no shutdown
 
       interface Ethernet1/30
+        no switchport
+        no shutdown
 
       interface Ethernet1/31
+        no switchport
+        no shutdown
 
       interface Ethernet1/32
+        no switchport
+        no shutdown
 
       interface Ethernet1/33
+        no switchport
+        no shutdown
 
       interface Ethernet1/34
+        no switchport
+        no shutdown
 
       interface Ethernet1/35
+        no switchport
+        no shutdown
 
       interface Ethernet1/36
+        no switchport
+        no shutdown
 
       interface Ethernet1/37
+        no switchport
+        no shutdown
 
       interface Ethernet1/38
+        no switchport
+        no shutdown
 
       interface Ethernet1/39
+        no switchport
+        no shutdown
 
       interface Ethernet1/40
+        no switchport
+        no shutdown
 
       interface Ethernet1/41
+        no switchport
+        no shutdown
 
       interface Ethernet1/42
+        no switchport
+        no shutdown
 
       interface Ethernet1/43
+        no switchport
+        no shutdown
 
       interface Ethernet1/44
+        no switchport
+        no shutdown
 
       interface Ethernet1/45
+        no switchport
+        no shutdown
 
       interface Ethernet1/46
+        no switchport
+        no shutdown
 
       interface Ethernet1/47
+        no switchport
+        no shutdown
 
       interface Ethernet1/48
+        no switchport
+        no shutdown
 
       interface Ethernet1/49
+        no switchport
+        no shutdown
 
       interface Ethernet1/50
+        no switchport
+        no shutdown
 
       interface Ethernet1/51
+        no switchport
+        no shutdown
 
       interface Ethernet1/52
+        no switchport
+        no shutdown
 
       interface Ethernet1/53
+        no switchport
+        no shutdown
 
       interface Ethernet1/54
+        no switchport
+        no shutdown
 
       interface Ethernet1/55
+        no switchport
+        no shutdown
 
       interface Ethernet1/56
+        no switchport
+        no shutdown
 
       interface Ethernet1/57
+        no switchport
+        no shutdown
 
       interface Ethernet1/58
+        no switchport
+        no shutdown
 
       interface Ethernet1/59
+        no switchport
+        no shutdown
 
       interface Ethernet1/60
+        no switchport
+        no shutdown
 
       interface Ethernet1/61
+        no switchport
+        no shutdown
 
       interface Ethernet1/62
+        no switchport
+        no shutdown
 
       interface Ethernet1/63
+        no switchport
+        no shutdown
 
       interface Ethernet1/64
+        no switchport
+        no shutdown
 
       interface Ethernet1/65
+        no switchport
+        no shutdown
 
       interface Ethernet1/66
+        no switchport
+        no shutdown
 
       interface Ethernet1/67
+        no switchport
+        no shutdown
 
       interface Ethernet1/68
+        no switchport
+        no shutdown
 
       interface Ethernet1/69
+        no switchport
+        no shutdown
 
       interface Ethernet1/70
+        no switchport
+        no shutdown
 
       interface Ethernet1/71
+        no switchport
+        no shutdown
 
       interface Ethernet1/72
+        no switchport
+        no shutdown
 
       interface Ethernet1/73
+        no switchport
+        no shutdown
 
       interface Ethernet1/74
+        no switchport
+        no shutdown
 
       interface Ethernet1/75
+        no switchport
+        no shutdown
 
       interface Ethernet1/76
+        no switchport
+        no shutdown
 
       interface Ethernet1/77
+        no switchport
+        no shutdown
 
       interface Ethernet1/78
+        no switchport
+        no shutdown
 
       interface Ethernet1/79
+        no switchport
+        no shutdown
 
       interface Ethernet1/80
+        no switchport
+        no shutdown
 
       interface Ethernet1/81
+        no switchport
+        no shutdown
 
       interface Ethernet1/82
+        no switchport
+        no shutdown
 
       interface Ethernet1/83
+        no switchport
+        no shutdown
 
       interface Ethernet1/84
+        no switchport
+        no shutdown
 
       interface Ethernet1/85
+        no switchport
+        no shutdown
 
       interface Ethernet1/86
+        no switchport
+        no shutdown
 
       interface Ethernet1/87
+        no switchport
+        no shutdown
 
       interface Ethernet1/88
+        no switchport
+        no shutdown
 
       interface Ethernet1/89
+        no switchport
+        no shutdown
 
       interface Ethernet1/90
+        no switchport
+        no shutdown
 
       interface Ethernet1/91
+        no switchport
+        no shutdown
 
       interface Ethernet1/92
+        no switchport
+        no shutdown
 
       interface Ethernet1/93
+        no switchport
+        no shutdown
 
       interface Ethernet1/94
+        no switchport
+        no shutdown
 
       interface Ethernet1/95
+        no switchport
+        no shutdown
 
       interface Ethernet1/96
+        no switchport
+        no shutdown
 
       interface Ethernet1/97
+        no switchport
+        no shutdown
 
       interface Ethernet1/98
+        no switchport
+        no shutdown
 
       interface Ethernet1/99
+        no switchport
+        no shutdown
 
       interface Ethernet1/100
+        no switchport
+        no shutdown
 
       interface Ethernet1/101
+        no switchport
+        no shutdown
 
       interface Ethernet1/102
+        no switchport
+        no shutdown
 
       interface Ethernet1/103
+        no switchport
+        no shutdown
 
       interface Ethernet1/104
+        no switchport
+        no shutdown
 
       interface Ethernet1/105
+        no switchport
+        no shutdown
 
       interface Ethernet1/106
+        no switchport
+        no shutdown
 
       interface Ethernet1/107
+        no switchport
+        no shutdown
 
       interface Ethernet1/108
+        no switchport
+        no shutdown
 
       interface Ethernet1/109
+        no switchport
+        no shutdown
 
       interface Ethernet1/110
+        no switchport
+        no shutdown
 
       interface Ethernet1/111
+        no switchport
+        no shutdown
 
       interface Ethernet1/112
+        no switchport
+        no shutdown
 
       interface Ethernet1/113
+        no switchport
+        no shutdown
 
       interface Ethernet1/114
+        no switchport
+        no shutdown
 
       interface Ethernet1/115
+        no switchport
+        no shutdown
 
       interface Ethernet1/116
+        no switchport
+        no shutdown
 
       interface Ethernet1/117
+        no switchport
+        no shutdown
 
       interface Ethernet1/118
+        no switchport
+        no shutdown
 
       interface Ethernet1/119
+        no switchport
+        no shutdown
 
       interface Ethernet1/120
+        no switchport
+        no shutdown
 
       interface Ethernet1/121
+        no switchport
+        no shutdown
 
       interface Ethernet1/122
+        no switchport
+        no shutdown
 
       interface Ethernet1/123
+        no switchport
+        no shutdown
 
       interface Ethernet1/124
+        no switchport
+        no shutdown
 
       interface Ethernet1/125
+        no switchport
+        no shutdown
 
       interface Ethernet1/126
+        no switchport
+        no shutdown
 
       interface Ethernet1/127
+        no switchport
+        no shutdown
 
       interface Ethernet1/128
+        no switchport
+        no shutdown
 
       interface mgmt0
         no cdp enable
@@ -1060,8 +1813,8 @@ nodes:
     configuration: |2-
 
       !Command: show running-config
-      !Running configuration last done at: Wed Mar 25 08:22:32 2020
-      !Time: Wed Mar 25 08:22:35 2020
+      !Running configuration last done at: Wed Mar 25 09:27:47 2020
+      !Time: Wed Mar 25 09:27:49 2020
 
       version 9.2(3) Bios:version
       hostname super-spine1
@@ -1392,8 +2145,8 @@ nodes:
     configuration: |2-
 
       !Command: show running-config
-      !Running configuration last done at: Wed Mar 25 08:45:59 2020
-      !Time: Wed Mar 25 08:46:02 2020
+      !Running configuration last done at: Wed Mar 25 09:27:47 2020
+      !Time: Wed Mar 25 09:27:50 2020
 
       version 9.2(3) Bios:version
       hostname site2-bgwspine1
@@ -1412,271 +2165,522 @@ nodes:
       ip domain-lookup
       snmp-server user admin network-admin auth md5 0x9727f26958b134c66511ecae825f5cd5 priv 0x9727f26958b134c66511ecae825f5cd5 localizedkey
       snmp-server user cisco network-admin auth md5 0xad18df00b37a461d192416d1142596ed priv 0xad18df00b37a461d192416d1142596ed localizedkey
-      rmon event 1 description FATAL(1) owner PMON@FATAL
-      rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
-      rmon event 3 description ERROR(3) owner PMON@ERROR
-      rmon event 4 description WARNING(4) owner PMON@WARNING
-      rmon event 5 description INFORMATION(5) owner PMON@INFO
 
       vlan 1
 
       vrf context management
 
       interface Ethernet1/1
+        no switchport
+        no shutdown
 
       interface Ethernet1/2
+        no switchport
+        no shutdown
 
       interface Ethernet1/3
+        no switchport
+        no shutdown
 
       interface Ethernet1/4
+        no switchport
+        no shutdown
 
       interface Ethernet1/5
+        no switchport
+        no shutdown
 
       interface Ethernet1/6
+        no switchport
+        no shutdown
 
       interface Ethernet1/7
+        no switchport
+        no shutdown
 
       interface Ethernet1/8
+        no switchport
+        no shutdown
 
       interface Ethernet1/9
+        no switchport
+        no shutdown
 
       interface Ethernet1/10
+        no switchport
+        no shutdown
 
       interface Ethernet1/11
+        no switchport
+        no shutdown
 
       interface Ethernet1/12
+        no switchport
+        no shutdown
 
       interface Ethernet1/13
+        no switchport
+        no shutdown
 
       interface Ethernet1/14
+        no switchport
+        no shutdown
 
       interface Ethernet1/15
+        no switchport
+        no shutdown
 
       interface Ethernet1/16
+        no switchport
+        no shutdown
 
       interface Ethernet1/17
+        no switchport
+        no shutdown
 
       interface Ethernet1/18
+        no switchport
+        no shutdown
 
       interface Ethernet1/19
+        no switchport
+        no shutdown
 
       interface Ethernet1/20
+        no switchport
+        no shutdown
 
       interface Ethernet1/21
+        no switchport
+        no shutdown
 
       interface Ethernet1/22
+        no switchport
+        no shutdown
 
       interface Ethernet1/23
+        no switchport
+        no shutdown
 
       interface Ethernet1/24
+        no switchport
+        no shutdown
 
       interface Ethernet1/25
+        no switchport
+        no shutdown
 
       interface Ethernet1/26
+        no switchport
+        no shutdown
 
       interface Ethernet1/27
+        no switchport
+        no shutdown
 
       interface Ethernet1/28
+        no switchport
+        no shutdown
 
       interface Ethernet1/29
+        no switchport
+        no shutdown
 
       interface Ethernet1/30
+        no switchport
+        no shutdown
 
       interface Ethernet1/31
+        no switchport
+        no shutdown
 
       interface Ethernet1/32
+        no switchport
+        no shutdown
 
       interface Ethernet1/33
+        no switchport
+        no shutdown
 
       interface Ethernet1/34
+        no switchport
+        no shutdown
 
       interface Ethernet1/35
+        no switchport
+        no shutdown
 
       interface Ethernet1/36
+        no switchport
+        no shutdown
 
       interface Ethernet1/37
+        no switchport
+        no shutdown
 
       interface Ethernet1/38
+        no switchport
+        no shutdown
 
       interface Ethernet1/39
+        no switchport
+        no shutdown
 
       interface Ethernet1/40
+        no switchport
+        no shutdown
 
       interface Ethernet1/41
+        no switchport
+        no shutdown
 
       interface Ethernet1/42
+        no switchport
+        no shutdown
 
       interface Ethernet1/43
+        no switchport
+        no shutdown
 
       interface Ethernet1/44
+        no switchport
+        no shutdown
 
       interface Ethernet1/45
+        no switchport
+        no shutdown
 
       interface Ethernet1/46
+        no switchport
+        no shutdown
 
       interface Ethernet1/47
+        no switchport
+        no shutdown
 
       interface Ethernet1/48
+        no switchport
+        no shutdown
 
       interface Ethernet1/49
+        no switchport
+        no shutdown
 
       interface Ethernet1/50
+        no switchport
+        no shutdown
 
       interface Ethernet1/51
+        no switchport
+        no shutdown
 
       interface Ethernet1/52
+        no switchport
+        no shutdown
 
       interface Ethernet1/53
+        no switchport
+        no shutdown
 
       interface Ethernet1/54
+        no switchport
+        no shutdown
 
       interface Ethernet1/55
+        no switchport
+        no shutdown
 
       interface Ethernet1/56
+        no switchport
+        no shutdown
 
       interface Ethernet1/57
+        no switchport
+        no shutdown
 
       interface Ethernet1/58
+        no switchport
+        no shutdown
 
       interface Ethernet1/59
+        no switchport
+        no shutdown
 
       interface Ethernet1/60
+        no switchport
+        no shutdown
 
       interface Ethernet1/61
+        no switchport
+        no shutdown
 
       interface Ethernet1/62
+        no switchport
+        no shutdown
 
       interface Ethernet1/63
+        no switchport
+        no shutdown
 
       interface Ethernet1/64
+        no switchport
+        no shutdown
 
       interface Ethernet1/65
+        no switchport
+        no shutdown
 
       interface Ethernet1/66
+        no switchport
+        no shutdown
 
       interface Ethernet1/67
+        no switchport
+        no shutdown
 
       interface Ethernet1/68
+        no switchport
+        no shutdown
 
       interface Ethernet1/69
+        no switchport
+        no shutdown
 
       interface Ethernet1/70
+        no switchport
+        no shutdown
 
       interface Ethernet1/71
+        no switchport
+        no shutdown
 
       interface Ethernet1/72
+        no switchport
+        no shutdown
 
       interface Ethernet1/73
+        no switchport
+        no shutdown
 
       interface Ethernet1/74
+        no switchport
+        no shutdown
 
       interface Ethernet1/75
+        no switchport
+        no shutdown
 
       interface Ethernet1/76
+        no switchport
+        no shutdown
 
       interface Ethernet1/77
+        no switchport
+        no shutdown
 
       interface Ethernet1/78
+        no switchport
+        no shutdown
 
       interface Ethernet1/79
+        no switchport
+        no shutdown
 
       interface Ethernet1/80
+        no switchport
+        no shutdown
 
       interface Ethernet1/81
+        no switchport
+        no shutdown
 
       interface Ethernet1/82
+        no switchport
+        no shutdown
 
       interface Ethernet1/83
+        no switchport
+        no shutdown
 
       interface Ethernet1/84
+        no switchport
+        no shutdown
 
       interface Ethernet1/85
+        no switchport
+        no shutdown
 
       interface Ethernet1/86
+        no switchport
+        no shutdown
 
       interface Ethernet1/87
+        no switchport
+        no shutdown
 
       interface Ethernet1/88
+        no switchport
+        no shutdown
 
       interface Ethernet1/89
+        no switchport
+        no shutdown
 
       interface Ethernet1/90
+        no switchport
+        no shutdown
 
       interface Ethernet1/91
+        no switchport
+        no shutdown
 
       interface Ethernet1/92
+        no switchport
+        no shutdown
 
       interface Ethernet1/93
+        no switchport
+        no shutdown
 
       interface Ethernet1/94
+        no switchport
+        no shutdown
 
       interface Ethernet1/95
+        no switchport
+        no shutdown
 
       interface Ethernet1/96
+        no switchport
+        no shutdown
 
       interface Ethernet1/97
+        no switchport
+        no shutdown
 
       interface Ethernet1/98
+        no switchport
+        no shutdown
 
       interface Ethernet1/99
+        no switchport
+        no shutdown
 
       interface Ethernet1/100
+        no switchport
+        no shutdown
 
       interface Ethernet1/101
+        no switchport
+        no shutdown
 
       interface Ethernet1/102
+        no switchport
+        no shutdown
 
       interface Ethernet1/103
+        no switchport
+        no shutdown
 
       interface Ethernet1/104
+        no switchport
+        no shutdown
 
       interface Ethernet1/105
+        no switchport
+        no shutdown
 
       interface Ethernet1/106
+        no switchport
+        no shutdown
 
       interface Ethernet1/107
+        no switchport
+        no shutdown
 
       interface Ethernet1/108
+        no switchport
+        no shutdown
 
       interface Ethernet1/109
+        no switchport
+        no shutdown
 
       interface Ethernet1/110
+        no switchport
+        no shutdown
 
       interface Ethernet1/111
+        no switchport
+        no shutdown
 
       interface Ethernet1/112
+        no switchport
+        no shutdown
 
       interface Ethernet1/113
+        no switchport
+        no shutdown
 
       interface Ethernet1/114
+        no switchport
+        no shutdown
 
       interface Ethernet1/115
+        no switchport
+        no shutdown
 
       interface Ethernet1/116
+        no switchport
+        no shutdown
 
       interface Ethernet1/117
+        no switchport
+        no shutdown
 
       interface Ethernet1/118
+        no switchport
+        no shutdown
 
       interface Ethernet1/119
+        no switchport
+        no shutdown
 
       interface Ethernet1/120
+        no switchport
+        no shutdown
 
       interface Ethernet1/121
+        no switchport
+        no shutdown
 
       interface Ethernet1/122
+        no switchport
+        no shutdown
 
       interface Ethernet1/123
+        no switchport
+        no shutdown
 
       interface Ethernet1/124
+        no switchport
+        no shutdown
 
       interface Ethernet1/125
+        no switchport
+        no shutdown
 
       interface Ethernet1/126
+        no switchport
+        no shutdown
 
       interface Ethernet1/127
+        no switchport
+        no shutdown
 
       interface Ethernet1/128
+        no switchport
+        no shutdown
 
       interface mgmt0
         vrf member management
@@ -1724,8 +2728,8 @@ nodes:
     configuration: |2-
 
       !Command: show running-config
-      !Running configuration last done at: Wed Mar 25 08:45:58 2020
-      !Time: Wed Mar 25 08:46:01 2020
+      !Running configuration last done at: Wed Mar 25 09:27:46 2020
+      !Time: Wed Mar 25 09:27:48 2020
 
       version 9.2(3) Bios:version
       hostname site2-bgpspine2
@@ -1744,271 +2748,522 @@ nodes:
       ip domain-lookup
       snmp-server user admin network-admin auth md5 0xe8558af69e558fc12a04287dec0b3c43 priv 0xe8558af69e558fc12a04287dec0b3c43 localizedkey
       snmp-server user cisco network-admin auth md5 0x71e460e3bbd299b4d21d0a29bde85280 priv 0x71e460e3bbd299b4d21d0a29bde85280 localizedkey
-      rmon event 1 description FATAL(1) owner PMON@FATAL
-      rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
-      rmon event 3 description ERROR(3) owner PMON@ERROR
-      rmon event 4 description WARNING(4) owner PMON@WARNING
-      rmon event 5 description INFORMATION(5) owner PMON@INFO
 
       vlan 1
 
       vrf context management
 
       interface Ethernet1/1
+        no switchport
+        no shutdown
 
       interface Ethernet1/2
+        no switchport
+        no shutdown
 
       interface Ethernet1/3
+        no switchport
+        no shutdown
 
       interface Ethernet1/4
+        no switchport
+        no shutdown
 
       interface Ethernet1/5
+        no switchport
+        no shutdown
 
       interface Ethernet1/6
+        no switchport
+        no shutdown
 
       interface Ethernet1/7
+        no switchport
+        no shutdown
 
       interface Ethernet1/8
+        no switchport
+        no shutdown
 
       interface Ethernet1/9
+        no switchport
+        no shutdown
 
       interface Ethernet1/10
+        no switchport
+        no shutdown
 
       interface Ethernet1/11
+        no switchport
+        no shutdown
 
       interface Ethernet1/12
+        no switchport
+        no shutdown
 
       interface Ethernet1/13
+        no switchport
+        no shutdown
 
       interface Ethernet1/14
+        no switchport
+        no shutdown
 
       interface Ethernet1/15
+        no switchport
+        no shutdown
 
       interface Ethernet1/16
+        no switchport
+        no shutdown
 
       interface Ethernet1/17
+        no switchport
+        no shutdown
 
       interface Ethernet1/18
+        no switchport
+        no shutdown
 
       interface Ethernet1/19
+        no switchport
+        no shutdown
 
       interface Ethernet1/20
+        no switchport
+        no shutdown
 
       interface Ethernet1/21
+        no switchport
+        no shutdown
 
       interface Ethernet1/22
+        no switchport
+        no shutdown
 
       interface Ethernet1/23
+        no switchport
+        no shutdown
 
       interface Ethernet1/24
+        no switchport
+        no shutdown
 
       interface Ethernet1/25
+        no switchport
+        no shutdown
 
       interface Ethernet1/26
+        no switchport
+        no shutdown
 
       interface Ethernet1/27
+        no switchport
+        no shutdown
 
       interface Ethernet1/28
+        no switchport
+        no shutdown
 
       interface Ethernet1/29
+        no switchport
+        no shutdown
 
       interface Ethernet1/30
+        no switchport
+        no shutdown
 
       interface Ethernet1/31
+        no switchport
+        no shutdown
 
       interface Ethernet1/32
+        no switchport
+        no shutdown
 
       interface Ethernet1/33
+        no switchport
+        no shutdown
 
       interface Ethernet1/34
+        no switchport
+        no shutdown
 
       interface Ethernet1/35
+        no switchport
+        no shutdown
 
       interface Ethernet1/36
+        no switchport
+        no shutdown
 
       interface Ethernet1/37
+        no switchport
+        no shutdown
 
       interface Ethernet1/38
+        no switchport
+        no shutdown
 
       interface Ethernet1/39
+        no switchport
+        no shutdown
 
       interface Ethernet1/40
+        no switchport
+        no shutdown
 
       interface Ethernet1/41
+        no switchport
+        no shutdown
 
       interface Ethernet1/42
+        no switchport
+        no shutdown
 
       interface Ethernet1/43
+        no switchport
+        no shutdown
 
       interface Ethernet1/44
+        no switchport
+        no shutdown
 
       interface Ethernet1/45
+        no switchport
+        no shutdown
 
       interface Ethernet1/46
+        no switchport
+        no shutdown
 
       interface Ethernet1/47
+        no switchport
+        no shutdown
 
       interface Ethernet1/48
+        no switchport
+        no shutdown
 
       interface Ethernet1/49
+        no switchport
+        no shutdown
 
       interface Ethernet1/50
+        no switchport
+        no shutdown
 
       interface Ethernet1/51
+        no switchport
+        no shutdown
 
       interface Ethernet1/52
+        no switchport
+        no shutdown
 
       interface Ethernet1/53
+        no switchport
+        no shutdown
 
       interface Ethernet1/54
+        no switchport
+        no shutdown
 
       interface Ethernet1/55
+        no switchport
+        no shutdown
 
       interface Ethernet1/56
+        no switchport
+        no shutdown
 
       interface Ethernet1/57
+        no switchport
+        no shutdown
 
       interface Ethernet1/58
+        no switchport
+        no shutdown
 
       interface Ethernet1/59
+        no switchport
+        no shutdown
 
       interface Ethernet1/60
+        no switchport
+        no shutdown
 
       interface Ethernet1/61
+        no switchport
+        no shutdown
 
       interface Ethernet1/62
+        no switchport
+        no shutdown
 
       interface Ethernet1/63
+        no switchport
+        no shutdown
 
       interface Ethernet1/64
+        no switchport
+        no shutdown
 
       interface Ethernet1/65
+        no switchport
+        no shutdown
 
       interface Ethernet1/66
+        no switchport
+        no shutdown
 
       interface Ethernet1/67
+        no switchport
+        no shutdown
 
       interface Ethernet1/68
+        no switchport
+        no shutdown
 
       interface Ethernet1/69
+        no switchport
+        no shutdown
 
       interface Ethernet1/70
+        no switchport
+        no shutdown
 
       interface Ethernet1/71
+        no switchport
+        no shutdown
 
       interface Ethernet1/72
+        no switchport
+        no shutdown
 
       interface Ethernet1/73
+        no switchport
+        no shutdown
 
       interface Ethernet1/74
+        no switchport
+        no shutdown
 
       interface Ethernet1/75
+        no switchport
+        no shutdown
 
       interface Ethernet1/76
+        no switchport
+        no shutdown
 
       interface Ethernet1/77
+        no switchport
+        no shutdown
 
       interface Ethernet1/78
+        no switchport
+        no shutdown
 
       interface Ethernet1/79
+        no switchport
+        no shutdown
 
       interface Ethernet1/80
+        no switchport
+        no shutdown
 
       interface Ethernet1/81
+        no switchport
+        no shutdown
 
       interface Ethernet1/82
+        no switchport
+        no shutdown
 
       interface Ethernet1/83
+        no switchport
+        no shutdown
 
       interface Ethernet1/84
+        no switchport
+        no shutdown
 
       interface Ethernet1/85
+        no switchport
+        no shutdown
 
       interface Ethernet1/86
+        no switchport
+        no shutdown
 
       interface Ethernet1/87
+        no switchport
+        no shutdown
 
       interface Ethernet1/88
+        no switchport
+        no shutdown
 
       interface Ethernet1/89
+        no switchport
+        no shutdown
 
       interface Ethernet1/90
+        no switchport
+        no shutdown
 
       interface Ethernet1/91
+        no switchport
+        no shutdown
 
       interface Ethernet1/92
+        no switchport
+        no shutdown
 
       interface Ethernet1/93
+        no switchport
+        no shutdown
 
       interface Ethernet1/94
+        no switchport
+        no shutdown
 
       interface Ethernet1/95
+        no switchport
+        no shutdown
 
       interface Ethernet1/96
+        no switchport
+        no shutdown
 
       interface Ethernet1/97
+        no switchport
+        no shutdown
 
       interface Ethernet1/98
+        no switchport
+        no shutdown
 
       interface Ethernet1/99
+        no switchport
+        no shutdown
 
       interface Ethernet1/100
+        no switchport
+        no shutdown
 
       interface Ethernet1/101
+        no switchport
+        no shutdown
 
       interface Ethernet1/102
+        no switchport
+        no shutdown
 
       interface Ethernet1/103
+        no switchport
+        no shutdown
 
       interface Ethernet1/104
+        no switchport
+        no shutdown
 
       interface Ethernet1/105
+        no switchport
+        no shutdown
 
       interface Ethernet1/106
+        no switchport
+        no shutdown
 
       interface Ethernet1/107
+        no switchport
+        no shutdown
 
       interface Ethernet1/108
+        no switchport
+        no shutdown
 
       interface Ethernet1/109
+        no switchport
+        no shutdown
 
       interface Ethernet1/110
+        no switchport
+        no shutdown
 
       interface Ethernet1/111
+        no switchport
+        no shutdown
 
       interface Ethernet1/112
+        no switchport
+        no shutdown
 
       interface Ethernet1/113
+        no switchport
+        no shutdown
 
       interface Ethernet1/114
+        no switchport
+        no shutdown
 
       interface Ethernet1/115
+        no switchport
+        no shutdown
 
       interface Ethernet1/116
+        no switchport
+        no shutdown
 
       interface Ethernet1/117
+        no switchport
+        no shutdown
 
       interface Ethernet1/118
+        no switchport
+        no shutdown
 
       interface Ethernet1/119
+        no switchport
+        no shutdown
 
       interface Ethernet1/120
+        no switchport
+        no shutdown
 
       interface Ethernet1/121
+        no switchport
+        no shutdown
 
       interface Ethernet1/122
+        no switchport
+        no shutdown
 
       interface Ethernet1/123
+        no switchport
+        no shutdown
 
       interface Ethernet1/124
+        no switchport
+        no shutdown
 
       interface Ethernet1/125
+        no switchport
+        no shutdown
 
       interface Ethernet1/126
+        no switchport
+        no shutdown
 
       interface Ethernet1/127
+        no switchport
+        no shutdown
 
       interface Ethernet1/128
+        no switchport
+        no shutdown
 
       interface mgmt0
         vrf member management
@@ -2056,8 +3311,8 @@ nodes:
     configuration: |2-
 
       !Command: show running-config
-      !Running configuration last done at: Wed Mar 25 08:45:59 2020
-      !Time: Wed Mar 25 08:46:01 2020
+      !Running configuration last done at: Wed Mar 25 09:27:46 2020
+      !Time: Wed Mar 25 09:27:49 2020
 
       version 9.2(3) Bios:version
       hostname site2-leaf1
@@ -2076,271 +3331,522 @@ nodes:
       ip domain-lookup
       snmp-server user admin network-admin auth md5 0xd82dc09cd73a02aed37fcd98ece1559d priv 0xd82dc09cd73a02aed37fcd98ece1559d localizedkey
       snmp-server user cisco network-admin auth md5 0xe096bca5d4bed19f465af17b2f2e6f81 priv 0xe096bca5d4bed19f465af17b2f2e6f81 localizedkey
-      rmon event 1 description FATAL(1) owner PMON@FATAL
-      rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
-      rmon event 3 description ERROR(3) owner PMON@ERROR
-      rmon event 4 description WARNING(4) owner PMON@WARNING
-      rmon event 5 description INFORMATION(5) owner PMON@INFO
 
       vlan 1
 
       vrf context management
 
       interface Ethernet1/1
+        no switchport
+        no shutdown
 
       interface Ethernet1/2
+        no switchport
+        no shutdown
 
       interface Ethernet1/3
+        no switchport
+        no shutdown
 
       interface Ethernet1/4
+        no switchport
+        no shutdown
 
       interface Ethernet1/5
+        no switchport
+        no shutdown
 
       interface Ethernet1/6
+        no switchport
+        no shutdown
 
       interface Ethernet1/7
+        no switchport
+        no shutdown
 
       interface Ethernet1/8
+        no switchport
+        no shutdown
 
       interface Ethernet1/9
+        no switchport
+        no shutdown
 
       interface Ethernet1/10
+        no switchport
+        no shutdown
 
       interface Ethernet1/11
+        no switchport
+        no shutdown
 
       interface Ethernet1/12
+        no switchport
+        no shutdown
 
       interface Ethernet1/13
+        no switchport
+        no shutdown
 
       interface Ethernet1/14
+        no switchport
+        no shutdown
 
       interface Ethernet1/15
+        no switchport
+        no shutdown
 
       interface Ethernet1/16
+        no switchport
+        no shutdown
 
       interface Ethernet1/17
+        no switchport
+        no shutdown
 
       interface Ethernet1/18
+        no switchport
+        no shutdown
 
       interface Ethernet1/19
+        no switchport
+        no shutdown
 
       interface Ethernet1/20
+        no switchport
+        no shutdown
 
       interface Ethernet1/21
+        no switchport
+        no shutdown
 
       interface Ethernet1/22
+        no switchport
+        no shutdown
 
       interface Ethernet1/23
+        no switchport
+        no shutdown
 
       interface Ethernet1/24
+        no switchport
+        no shutdown
 
       interface Ethernet1/25
+        no switchport
+        no shutdown
 
       interface Ethernet1/26
+        no switchport
+        no shutdown
 
       interface Ethernet1/27
+        no switchport
+        no shutdown
 
       interface Ethernet1/28
+        no switchport
+        no shutdown
 
       interface Ethernet1/29
+        no switchport
+        no shutdown
 
       interface Ethernet1/30
+        no switchport
+        no shutdown
 
       interface Ethernet1/31
+        no switchport
+        no shutdown
 
       interface Ethernet1/32
+        no switchport
+        no shutdown
 
       interface Ethernet1/33
+        no switchport
+        no shutdown
 
       interface Ethernet1/34
+        no switchport
+        no shutdown
 
       interface Ethernet1/35
+        no switchport
+        no shutdown
 
       interface Ethernet1/36
+        no switchport
+        no shutdown
 
       interface Ethernet1/37
+        no switchport
+        no shutdown
 
       interface Ethernet1/38
+        no switchport
+        no shutdown
 
       interface Ethernet1/39
+        no switchport
+        no shutdown
 
       interface Ethernet1/40
+        no switchport
+        no shutdown
 
       interface Ethernet1/41
+        no switchport
+        no shutdown
 
       interface Ethernet1/42
+        no switchport
+        no shutdown
 
       interface Ethernet1/43
+        no switchport
+        no shutdown
 
       interface Ethernet1/44
+        no switchport
+        no shutdown
 
       interface Ethernet1/45
+        no switchport
+        no shutdown
 
       interface Ethernet1/46
+        no switchport
+        no shutdown
 
       interface Ethernet1/47
+        no switchport
+        no shutdown
 
       interface Ethernet1/48
+        no switchport
+        no shutdown
 
       interface Ethernet1/49
+        no switchport
+        no shutdown
 
       interface Ethernet1/50
+        no switchport
+        no shutdown
 
       interface Ethernet1/51
+        no switchport
+        no shutdown
 
       interface Ethernet1/52
+        no switchport
+        no shutdown
 
       interface Ethernet1/53
+        no switchport
+        no shutdown
 
       interface Ethernet1/54
+        no switchport
+        no shutdown
 
       interface Ethernet1/55
+        no switchport
+        no shutdown
 
       interface Ethernet1/56
+        no switchport
+        no shutdown
 
       interface Ethernet1/57
+        no switchport
+        no shutdown
 
       interface Ethernet1/58
+        no switchport
+        no shutdown
 
       interface Ethernet1/59
+        no switchport
+        no shutdown
 
       interface Ethernet1/60
+        no switchport
+        no shutdown
 
       interface Ethernet1/61
+        no switchport
+        no shutdown
 
       interface Ethernet1/62
+        no switchport
+        no shutdown
 
       interface Ethernet1/63
+        no switchport
+        no shutdown
 
       interface Ethernet1/64
+        no switchport
+        no shutdown
 
       interface Ethernet1/65
+        no switchport
+        no shutdown
 
       interface Ethernet1/66
+        no switchport
+        no shutdown
 
       interface Ethernet1/67
+        no switchport
+        no shutdown
 
       interface Ethernet1/68
+        no switchport
+        no shutdown
 
       interface Ethernet1/69
+        no switchport
+        no shutdown
 
       interface Ethernet1/70
+        no switchport
+        no shutdown
 
       interface Ethernet1/71
+        no switchport
+        no shutdown
 
       interface Ethernet1/72
+        no switchport
+        no shutdown
 
       interface Ethernet1/73
+        no switchport
+        no shutdown
 
       interface Ethernet1/74
+        no switchport
+        no shutdown
 
       interface Ethernet1/75
+        no switchport
+        no shutdown
 
       interface Ethernet1/76
+        no switchport
+        no shutdown
 
       interface Ethernet1/77
+        no switchport
+        no shutdown
 
       interface Ethernet1/78
+        no switchport
+        no shutdown
 
       interface Ethernet1/79
+        no switchport
+        no shutdown
 
       interface Ethernet1/80
+        no switchport
+        no shutdown
 
       interface Ethernet1/81
+        no switchport
+        no shutdown
 
       interface Ethernet1/82
+        no switchport
+        no shutdown
 
       interface Ethernet1/83
+        no switchport
+        no shutdown
 
       interface Ethernet1/84
+        no switchport
+        no shutdown
 
       interface Ethernet1/85
+        no switchport
+        no shutdown
 
       interface Ethernet1/86
+        no switchport
+        no shutdown
 
       interface Ethernet1/87
+        no switchport
+        no shutdown
 
       interface Ethernet1/88
+        no switchport
+        no shutdown
 
       interface Ethernet1/89
+        no switchport
+        no shutdown
 
       interface Ethernet1/90
+        no switchport
+        no shutdown
 
       interface Ethernet1/91
+        no switchport
+        no shutdown
 
       interface Ethernet1/92
+        no switchport
+        no shutdown
 
       interface Ethernet1/93
+        no switchport
+        no shutdown
 
       interface Ethernet1/94
+        no switchport
+        no shutdown
 
       interface Ethernet1/95
+        no switchport
+        no shutdown
 
       interface Ethernet1/96
+        no switchport
+        no shutdown
 
       interface Ethernet1/97
+        no switchport
+        no shutdown
 
       interface Ethernet1/98
+        no switchport
+        no shutdown
 
       interface Ethernet1/99
+        no switchport
+        no shutdown
 
       interface Ethernet1/100
+        no switchport
+        no shutdown
 
       interface Ethernet1/101
+        no switchport
+        no shutdown
 
       interface Ethernet1/102
+        no switchport
+        no shutdown
 
       interface Ethernet1/103
+        no switchport
+        no shutdown
 
       interface Ethernet1/104
+        no switchport
+        no shutdown
 
       interface Ethernet1/105
+        no switchport
+        no shutdown
 
       interface Ethernet1/106
+        no switchport
+        no shutdown
 
       interface Ethernet1/107
+        no switchport
+        no shutdown
 
       interface Ethernet1/108
+        no switchport
+        no shutdown
 
       interface Ethernet1/109
+        no switchport
+        no shutdown
 
       interface Ethernet1/110
+        no switchport
+        no shutdown
 
       interface Ethernet1/111
+        no switchport
+        no shutdown
 
       interface Ethernet1/112
+        no switchport
+        no shutdown
 
       interface Ethernet1/113
+        no switchport
+        no shutdown
 
       interface Ethernet1/114
+        no switchport
+        no shutdown
 
       interface Ethernet1/115
+        no switchport
+        no shutdown
 
       interface Ethernet1/116
+        no switchport
+        no shutdown
 
       interface Ethernet1/117
+        no switchport
+        no shutdown
 
       interface Ethernet1/118
+        no switchport
+        no shutdown
 
       interface Ethernet1/119
+        no switchport
+        no shutdown
 
       interface Ethernet1/120
+        no switchport
+        no shutdown
 
       interface Ethernet1/121
+        no switchport
+        no shutdown
 
       interface Ethernet1/122
+        no switchport
+        no shutdown
 
       interface Ethernet1/123
+        no switchport
+        no shutdown
 
       interface Ethernet1/124
+        no switchport
+        no shutdown
 
       interface Ethernet1/125
+        no switchport
+        no shutdown
 
       interface Ethernet1/126
+        no switchport
+        no shutdown
 
       interface Ethernet1/127
+        no switchport
+        no shutdown
 
       interface Ethernet1/128
+        no switchport
+        no shutdown
 
       interface mgmt0
         vrf member management
@@ -2384,8 +3890,8 @@ nodes:
     configuration: |2-
 
       !Command: show running-config
-      !Running configuration last done at: Wed Mar 25 08:46:00 2020
-      !Time: Wed Mar 25 08:46:02 2020
+      !Running configuration last done at: Wed Mar 25 09:27:47 2020
+      !Time: Wed Mar 25 09:27:50 2020
 
       version 9.2(3) Bios:version
       hostname site2-leaf2
@@ -2404,271 +3910,522 @@ nodes:
       ip domain-lookup
       snmp-server user admin network-admin auth md5 0x05fd5a05123e444cb190f4349782c247 priv 0x05fd5a05123e444cb190f4349782c247 localizedkey
       snmp-server user cisco network-admin auth md5 0xed2a386f0297a87685aed297d9ecca82 priv 0xed2a386f0297a87685aed297d9ecca82 localizedkey
-      rmon event 1 description FATAL(1) owner PMON@FATAL
-      rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
-      rmon event 3 description ERROR(3) owner PMON@ERROR
-      rmon event 4 description WARNING(4) owner PMON@WARNING
-      rmon event 5 description INFORMATION(5) owner PMON@INFO
 
       vlan 1
 
       vrf context management
 
       interface Ethernet1/1
+        no switchport
+        no shutdown
 
       interface Ethernet1/2
+        no switchport
+        no shutdown
 
       interface Ethernet1/3
+        no switchport
+        no shutdown
 
       interface Ethernet1/4
+        no switchport
+        no shutdown
 
       interface Ethernet1/5
+        no switchport
+        no shutdown
 
       interface Ethernet1/6
+        no switchport
+        no shutdown
 
       interface Ethernet1/7
+        no switchport
+        no shutdown
 
       interface Ethernet1/8
+        no switchport
+        no shutdown
 
       interface Ethernet1/9
+        no switchport
+        no shutdown
 
       interface Ethernet1/10
+        no switchport
+        no shutdown
 
       interface Ethernet1/11
+        no switchport
+        no shutdown
 
       interface Ethernet1/12
+        no switchport
+        no shutdown
 
       interface Ethernet1/13
+        no switchport
+        no shutdown
 
       interface Ethernet1/14
+        no switchport
+        no shutdown
 
       interface Ethernet1/15
+        no switchport
+        no shutdown
 
       interface Ethernet1/16
+        no switchport
+        no shutdown
 
       interface Ethernet1/17
+        no switchport
+        no shutdown
 
       interface Ethernet1/18
+        no switchport
+        no shutdown
 
       interface Ethernet1/19
+        no switchport
+        no shutdown
 
       interface Ethernet1/20
+        no switchport
+        no shutdown
 
       interface Ethernet1/21
+        no switchport
+        no shutdown
 
       interface Ethernet1/22
+        no switchport
+        no shutdown
 
       interface Ethernet1/23
+        no switchport
+        no shutdown
 
       interface Ethernet1/24
+        no switchport
+        no shutdown
 
       interface Ethernet1/25
+        no switchport
+        no shutdown
 
       interface Ethernet1/26
+        no switchport
+        no shutdown
 
       interface Ethernet1/27
+        no switchport
+        no shutdown
 
       interface Ethernet1/28
+        no switchport
+        no shutdown
 
       interface Ethernet1/29
+        no switchport
+        no shutdown
 
       interface Ethernet1/30
+        no switchport
+        no shutdown
 
       interface Ethernet1/31
+        no switchport
+        no shutdown
 
       interface Ethernet1/32
+        no switchport
+        no shutdown
 
       interface Ethernet1/33
+        no switchport
+        no shutdown
 
       interface Ethernet1/34
+        no switchport
+        no shutdown
 
       interface Ethernet1/35
+        no switchport
+        no shutdown
 
       interface Ethernet1/36
+        no switchport
+        no shutdown
 
       interface Ethernet1/37
+        no switchport
+        no shutdown
 
       interface Ethernet1/38
+        no switchport
+        no shutdown
 
       interface Ethernet1/39
+        no switchport
+        no shutdown
 
       interface Ethernet1/40
+        no switchport
+        no shutdown
 
       interface Ethernet1/41
+        no switchport
+        no shutdown
 
       interface Ethernet1/42
+        no switchport
+        no shutdown
 
       interface Ethernet1/43
+        no switchport
+        no shutdown
 
       interface Ethernet1/44
+        no switchport
+        no shutdown
 
       interface Ethernet1/45
+        no switchport
+        no shutdown
 
       interface Ethernet1/46
+        no switchport
+        no shutdown
 
       interface Ethernet1/47
+        no switchport
+        no shutdown
 
       interface Ethernet1/48
+        no switchport
+        no shutdown
 
       interface Ethernet1/49
+        no switchport
+        no shutdown
 
       interface Ethernet1/50
+        no switchport
+        no shutdown
 
       interface Ethernet1/51
+        no switchport
+        no shutdown
 
       interface Ethernet1/52
+        no switchport
+        no shutdown
 
       interface Ethernet1/53
+        no switchport
+        no shutdown
 
       interface Ethernet1/54
+        no switchport
+        no shutdown
 
       interface Ethernet1/55
+        no switchport
+        no shutdown
 
       interface Ethernet1/56
+        no switchport
+        no shutdown
 
       interface Ethernet1/57
+        no switchport
+        no shutdown
 
       interface Ethernet1/58
+        no switchport
+        no shutdown
 
       interface Ethernet1/59
+        no switchport
+        no shutdown
 
       interface Ethernet1/60
+        no switchport
+        no shutdown
 
       interface Ethernet1/61
+        no switchport
+        no shutdown
 
       interface Ethernet1/62
+        no switchport
+        no shutdown
 
       interface Ethernet1/63
+        no switchport
+        no shutdown
 
       interface Ethernet1/64
+        no switchport
+        no shutdown
 
       interface Ethernet1/65
+        no switchport
+        no shutdown
 
       interface Ethernet1/66
+        no switchport
+        no shutdown
 
       interface Ethernet1/67
+        no switchport
+        no shutdown
 
       interface Ethernet1/68
+        no switchport
+        no shutdown
 
       interface Ethernet1/69
+        no switchport
+        no shutdown
 
       interface Ethernet1/70
+        no switchport
+        no shutdown
 
       interface Ethernet1/71
+        no switchport
+        no shutdown
 
       interface Ethernet1/72
+        no switchport
+        no shutdown
 
       interface Ethernet1/73
+        no switchport
+        no shutdown
 
       interface Ethernet1/74
+        no switchport
+        no shutdown
 
       interface Ethernet1/75
+        no switchport
+        no shutdown
 
       interface Ethernet1/76
+        no switchport
+        no shutdown
 
       interface Ethernet1/77
+        no switchport
+        no shutdown
 
       interface Ethernet1/78
+        no switchport
+        no shutdown
 
       interface Ethernet1/79
+        no switchport
+        no shutdown
 
       interface Ethernet1/80
+        no switchport
+        no shutdown
 
       interface Ethernet1/81
+        no switchport
+        no shutdown
 
       interface Ethernet1/82
+        no switchport
+        no shutdown
 
       interface Ethernet1/83
+        no switchport
+        no shutdown
 
       interface Ethernet1/84
+        no switchport
+        no shutdown
 
       interface Ethernet1/85
+        no switchport
+        no shutdown
 
       interface Ethernet1/86
+        no switchport
+        no shutdown
 
       interface Ethernet1/87
+        no switchport
+        no shutdown
 
       interface Ethernet1/88
+        no switchport
+        no shutdown
 
       interface Ethernet1/89
+        no switchport
+        no shutdown
 
       interface Ethernet1/90
+        no switchport
+        no shutdown
 
       interface Ethernet1/91
+        no switchport
+        no shutdown
 
       interface Ethernet1/92
+        no switchport
+        no shutdown
 
       interface Ethernet1/93
+        no switchport
+        no shutdown
 
       interface Ethernet1/94
+        no switchport
+        no shutdown
 
       interface Ethernet1/95
+        no switchport
+        no shutdown
 
       interface Ethernet1/96
+        no switchport
+        no shutdown
 
       interface Ethernet1/97
+        no switchport
+        no shutdown
 
       interface Ethernet1/98
+        no switchport
+        no shutdown
 
       interface Ethernet1/99
+        no switchport
+        no shutdown
 
       interface Ethernet1/100
+        no switchport
+        no shutdown
 
       interface Ethernet1/101
+        no switchport
+        no shutdown
 
       interface Ethernet1/102
+        no switchport
+        no shutdown
 
       interface Ethernet1/103
+        no switchport
+        no shutdown
 
       interface Ethernet1/104
+        no switchport
+        no shutdown
 
       interface Ethernet1/105
+        no switchport
+        no shutdown
 
       interface Ethernet1/106
+        no switchport
+        no shutdown
 
       interface Ethernet1/107
+        no switchport
+        no shutdown
 
       interface Ethernet1/108
+        no switchport
+        no shutdown
 
       interface Ethernet1/109
+        no switchport
+        no shutdown
 
       interface Ethernet1/110
+        no switchport
+        no shutdown
 
       interface Ethernet1/111
+        no switchport
+        no shutdown
 
       interface Ethernet1/112
+        no switchport
+        no shutdown
 
       interface Ethernet1/113
+        no switchport
+        no shutdown
 
       interface Ethernet1/114
+        no switchport
+        no shutdown
 
       interface Ethernet1/115
+        no switchport
+        no shutdown
 
       interface Ethernet1/116
+        no switchport
+        no shutdown
 
       interface Ethernet1/117
+        no switchport
+        no shutdown
 
       interface Ethernet1/118
+        no switchport
+        no shutdown
 
       interface Ethernet1/119
+        no switchport
+        no shutdown
 
       interface Ethernet1/120
+        no switchport
+        no shutdown
 
       interface Ethernet1/121
+        no switchport
+        no shutdown
 
       interface Ethernet1/122
+        no switchport
+        no shutdown
 
       interface Ethernet1/123
+        no switchport
+        no shutdown
 
       interface Ethernet1/124
+        no switchport
+        no shutdown
 
       interface Ethernet1/125
+        no switchport
+        no shutdown
 
       interface Ethernet1/126
+        no switchport
+        no shutdown
 
       interface Ethernet1/127
+        no switchport
+        no shutdown
 
       interface Ethernet1/128
+        no switchport
+        no shutdown
 
       interface mgmt0
         vrf member management
@@ -2712,8 +4469,8 @@ nodes:
     configuration: |2-
 
       !Command: show running-config
-      !Running configuration last done at: Wed Mar 25 08:22:37 2020
-      !Time: Wed Mar 25 08:22:40 2020
+      !Running configuration last done at: Wed Mar 25 09:27:47 2020
+      !Time: Wed Mar 25 09:27:50 2020
 
       version 9.2(3) Bios:version
       hostname super-spine2
@@ -3096,8 +4853,8 @@ nodes:
     configuration: |2-
 
       !Command: show running-config
-      !Running configuration last done at: Wed Mar 25 08:42:30 2020
-      !Time: Wed Mar 25 08:42:31 2020
+      !Running configuration last done at: Wed Mar 25 09:27:47 2020
+      !Time: Wed Mar 25 09:27:49 2020
 
       version 9.2(3) Bios:version
       hostname site1-leaf1
@@ -3116,11 +4873,6 @@ nodes:
       ip domain-lookup
       snmp-server user admin network-admin auth md5 0x12dee40c1b7d8cc2496dd3d73be7549a priv 0x12dee40c1b7d8cc2496dd3d73be7549a localizedkey
       snmp-server user cisco network-admin auth md5 0x384104a5973c4cd92a823240d1e5de23 priv 0x384104a5973c4cd92a823240d1e5de23 localizedkey
-      rmon event 1 description FATAL(1) owner PMON@FATAL
-      rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
-      rmon event 3 description ERROR(3) owner PMON@ERROR
-      rmon event 4 description WARNING(4) owner PMON@WARNING
-      rmon event 5 description INFORMATION(5) owner PMON@INFO
 
       vlan 1
 
@@ -3548,50 +5300,95 @@ nodes:
 
       interface Ethernet1/106
         no switchport
+        no shutdown
 
       interface Ethernet1/107
+        no switchport
+        no shutdown
 
       interface Ethernet1/108
+        no switchport
+        no shutdown
 
       interface Ethernet1/109
+        no switchport
+        no shutdown
 
       interface Ethernet1/110
+        no switchport
+        no shutdown
 
       interface Ethernet1/111
+        no switchport
+        no shutdown
 
       interface Ethernet1/112
+        no switchport
+        no shutdown
 
       interface Ethernet1/113
+        no switchport
+        no shutdown
 
       interface Ethernet1/114
+        no switchport
+        no shutdown
 
       interface Ethernet1/115
+        no switchport
+        no shutdown
 
       interface Ethernet1/116
+        no switchport
+        no shutdown
 
       interface Ethernet1/117
+        no switchport
+        no shutdown
 
       interface Ethernet1/118
+        no switchport
+        no shutdown
 
       interface Ethernet1/119
+        no switchport
+        no shutdown
 
       interface Ethernet1/120
+        no switchport
+        no shutdown
 
       interface Ethernet1/121
+        no switchport
+        no shutdown
 
       interface Ethernet1/122
+        no switchport
+        no shutdown
 
       interface Ethernet1/123
+        no switchport
+        no shutdown
 
       interface Ethernet1/124
+        no switchport
+        no shutdown
 
       interface Ethernet1/125
+        no switchport
+        no shutdown
 
       interface Ethernet1/126
+        no switchport
+        no shutdown
 
       interface Ethernet1/127
+        no switchport
+        no shutdown
 
       interface Ethernet1/128
+        no switchport
+        no shutdown
 
       interface mgmt0
         no cdp enable
