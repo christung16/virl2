@@ -1,0 +1,3549 @@
+lab:
+  description: ''
+  notes: ''
+  timestamp: 1584973536.8431535
+  title: evpn-multisite-dcnm-28lab
+  version: 0.0.3
+nodes:
+  - id: n0
+    label: site1-leaf1
+    node_definition: nxosv9000
+    x: -550
+    y: 150
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Mar 25 04:39:31 2020
+      !Time: Wed Mar 25 04:39:34 2020
+
+      version 9.2(3) Bios:version
+      hostname site1-leaf1
+      vdc site1-leaf1 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource u4route-mem minimum 128 maximum 128
+        limit-resource u6route-mem minimum 96 maximum 96
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      username admin password 5 $5$fnRzSvlS$RMIq57dBAlp2tnWOrE/c6S5akGJZwnCi7mUYqdFCJq9  role network-admin
+      username cisco password 5 $5$JzrNCk.W$Xprh8KEojtTr1.6HwHcpew0w/6FMxadOT4i2sGNAtx8  role network-admin
+      username cisco passphrase  lifetime 99999 warntime 14 gracetime 3
+      ip domain-lookup
+      rmon event 1 description FATAL(1) owner PMON@FATAL
+      rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 description ERROR(3) owner PMON@ERROR
+      rmon event 4 description WARNING(4) owner PMON@WARNING
+      rmon event 5 description INFORMATION(5) owner PMON@INFO
+
+      vlan 1
+
+      vrf context management
+
+      interface Ethernet1/1
+
+      interface Ethernet1/2
+
+      interface Ethernet1/3
+
+      interface Ethernet1/4
+
+      interface Ethernet1/5
+
+      interface Ethernet1/6
+
+      interface Ethernet1/7
+
+      interface Ethernet1/8
+
+      interface Ethernet1/9
+
+      interface Ethernet1/10
+
+      interface Ethernet1/11
+
+      interface Ethernet1/12
+
+      interface Ethernet1/13
+
+      interface Ethernet1/14
+
+      interface Ethernet1/15
+
+      interface Ethernet1/16
+
+      interface Ethernet1/17
+
+      interface Ethernet1/18
+
+      interface Ethernet1/19
+
+      interface Ethernet1/20
+
+      interface Ethernet1/21
+
+      interface Ethernet1/22
+
+      interface Ethernet1/23
+
+      interface Ethernet1/24
+
+      interface Ethernet1/25
+
+      interface Ethernet1/26
+
+      interface Ethernet1/27
+
+      interface Ethernet1/28
+
+      interface Ethernet1/29
+
+      interface Ethernet1/30
+
+      interface Ethernet1/31
+
+      interface Ethernet1/32
+
+      interface Ethernet1/33
+
+      interface Ethernet1/34
+
+      interface Ethernet1/35
+
+      interface Ethernet1/36
+
+      interface Ethernet1/37
+
+      interface Ethernet1/38
+
+      interface Ethernet1/39
+
+      interface Ethernet1/40
+
+      interface Ethernet1/41
+
+      interface Ethernet1/42
+
+      interface Ethernet1/43
+
+      interface Ethernet1/44
+
+      interface Ethernet1/45
+
+      interface Ethernet1/46
+
+      interface Ethernet1/47
+
+      interface Ethernet1/48
+
+      interface Ethernet1/49
+
+      interface Ethernet1/50
+
+      interface Ethernet1/51
+
+      interface Ethernet1/52
+
+      interface Ethernet1/53
+
+      interface Ethernet1/54
+
+      interface Ethernet1/55
+
+      interface Ethernet1/56
+
+      interface Ethernet1/57
+
+      interface Ethernet1/58
+
+      interface Ethernet1/59
+
+      interface Ethernet1/60
+
+      interface Ethernet1/61
+
+      interface Ethernet1/62
+
+      interface Ethernet1/63
+
+      interface Ethernet1/64
+
+      interface Ethernet1/65
+
+      interface Ethernet1/66
+
+      interface Ethernet1/67
+
+      interface Ethernet1/68
+
+      interface Ethernet1/69
+
+      interface Ethernet1/70
+
+      interface Ethernet1/71
+
+      interface Ethernet1/72
+
+      interface Ethernet1/73
+
+      interface Ethernet1/74
+
+      interface Ethernet1/75
+
+      interface Ethernet1/76
+
+      interface Ethernet1/77
+
+      interface Ethernet1/78
+
+      interface Ethernet1/79
+
+      interface Ethernet1/80
+
+      interface Ethernet1/81
+
+      interface Ethernet1/82
+
+      interface Ethernet1/83
+
+      interface Ethernet1/84
+
+      interface Ethernet1/85
+
+      interface Ethernet1/86
+
+      interface Ethernet1/87
+
+      interface Ethernet1/88
+
+      interface Ethernet1/89
+
+      interface Ethernet1/90
+
+      interface Ethernet1/91
+
+      interface Ethernet1/92
+
+      interface Ethernet1/93
+
+      interface Ethernet1/94
+
+      interface Ethernet1/95
+
+      interface Ethernet1/96
+
+      interface Ethernet1/97
+
+      interface Ethernet1/98
+
+      interface Ethernet1/99
+
+      interface Ethernet1/100
+
+      interface Ethernet1/101
+
+      interface Ethernet1/102
+
+      interface Ethernet1/103
+
+      interface Ethernet1/104
+
+      interface Ethernet1/105
+
+      interface Ethernet1/106
+
+      interface Ethernet1/107
+
+      interface Ethernet1/108
+
+      interface Ethernet1/109
+
+      interface Ethernet1/110
+
+      interface Ethernet1/111
+
+      interface Ethernet1/112
+
+      interface Ethernet1/113
+
+      interface Ethernet1/114
+
+      interface Ethernet1/115
+
+      interface Ethernet1/116
+
+      interface Ethernet1/117
+
+      interface Ethernet1/118
+
+      interface Ethernet1/119
+
+      interface Ethernet1/120
+
+      interface Ethernet1/121
+
+      interface Ethernet1/122
+
+      interface Ethernet1/123
+
+      interface Ethernet1/124
+
+      interface Ethernet1/125
+
+      interface Ethernet1/126
+
+      interface Ethernet1/127
+
+      interface Ethernet1/128
+
+      interface mgmt0
+        no cdp enable
+        vrf member management
+        ip address 10.75.202.11/24
+      line console
+        exec-timeout 0
+        terminal width  511
+      line vty
+      boot nxos bootflash:/nxos.9.2.3.bin
+
+      no logging console
+    image_definition: nxosv9000-9-2-3
+    ram: 8192
+    cpus: 4
+    tags: []
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        slot: 0
+        label: mgmt0
+        type: physical
+      - id: i2
+        slot: 1
+        label: Ethernet1/1
+        type: physical
+      - id: i3
+        slot: 2
+        label: Ethernet1/2
+        type: physical
+      - id: i4
+        slot: 3
+        label: Ethernet1/3
+        type: physical
+  - id: n1
+    label: site1-leaf2
+    node_definition: nxosv9000
+    x: -400
+    y: 150
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Mar 25 05:06:29 2020
+      !Time: Wed Mar 25 05:06:31 2020
+
+      version 9.2(3) Bios:version
+      hostname site1-leaf2
+      vdc site1-leaf2 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource u4route-mem minimum 128 maximum 128
+        limit-resource u6route-mem minimum 96 maximum 96
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      username admin password 5 $5$FehXJqkf$tYuYRurmyKbWlsh5APyAHLw8PlMZI.AZTXvcRkVDK.8  role network-admin
+      username cisco password 5 $5$jJQXfSPE$LPardCpFefvainutil/3b27RDanzEhws0swtZU8Pb98  role network-admin
+      username cisco passphrase  lifetime 99999 warntime 14 gracetime 3
+      ip domain-lookup
+      snmp-server user admin network-admin auth md5 0x12dee40c1b7d8cc2496dd3d73be7549a priv 0x12dee40c1b7d8cc2496dd3d73be7549a localizedkey
+      rmon event 1 description FATAL(1) owner PMON@FATAL
+      rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 description ERROR(3) owner PMON@ERRORcon
+      rmon event 4 description WARNING(4) owner PMON@WARNING
+      rmon event 5 description INFORMATION(5) owner PMON@INFO
+
+      vlan 1
+
+      vrf context management
+
+      interface Ethernet1/1
+
+      interface Ethernet1/2
+
+      interface Ethernet1/3
+
+      interface Ethernet1/4
+
+      interface Ethernet1/5
+
+      interface Ethernet1/6
+
+      interface Ethernet1/7
+
+      interface Ethernet1/8
+
+      interface Ethernet1/9
+
+      interface Ethernet1/10
+
+      interface Ethernet1/11
+
+      interface Ethernet1/12
+
+      interface Ethernet1/13
+
+      interface Ethernet1/14
+
+      interface Ethernet1/15
+
+      interface Ethernet1/16
+
+      interface Ethernet1/17
+
+      interface Ethernet1/18
+
+      interface Ethernet1/19
+
+      interface Ethernet1/20
+
+      interface Ethernet1/21
+
+      interface Ethernet1/22
+
+      interface Ethernet1/23
+
+      interface Ethernet1/24
+
+      interface Ethernet1/25
+
+      interface Ethernet1/26
+
+      interface Ethernet1/27
+
+      interface Ethernet1/28
+
+      interface Ethernet1/29
+
+      interface Ethernet1/30
+
+      interface Ethernet1/31
+
+      interface Ethernet1/32
+
+      interface Ethernet1/33
+
+      interface Ethernet1/34
+
+      interface Ethernet1/35
+
+      interface Ethernet1/36
+
+      interface Ethernet1/37
+
+      interface Ethernet1/38
+
+      interface Ethernet1/39
+
+      interface Ethernet1/40
+
+      interface Ethernet1/41
+
+      interface Ethernet1/42
+
+      interface Ethernet1/43
+
+      interface Ethernet1/44
+
+      interface Ethernet1/45
+
+      interface Ethernet1/46
+
+      interface Ethernet1/47
+
+      interface Ethernet1/48
+
+      interface Ethernet1/49
+
+      interface Ethernet1/50
+
+      interface Ethernet1/51
+
+      interface Ethernet1/52
+
+      interface Ethernet1/53
+
+      interface Ethernet1/54
+
+      interface Ethernet1/55
+
+      interface Ethernet1/56
+
+      interface Ethernet1/57
+
+      interface Ethernet1/58
+
+      interface Ethernet1/59
+
+      interface Ethernet1/60
+
+      interface Ethernet1/61
+
+      interface Ethernet1/62
+
+      interface Ethernet1/63
+
+      interface Ethernet1/64
+
+      interface Ethernet1/65
+
+      interface Ethernet1/66
+
+      interface Ethernet1/67
+
+      interface Ethernet1/68
+
+      interface Ethernet1/69
+
+      interface Ethernet1/70
+
+      interface Ethernet1/71
+
+      interface Ethernet1/72
+
+      interface Ethernet1/73
+
+      interface Ethernet1/74
+
+      interface Ethernet1/75
+
+      interface Ethernet1/76
+
+      interface Ethernet1/77
+
+      interface Ethernet1/78
+
+      interface Ethernet1/79
+
+      interface Ethernet1/80
+
+      interface Ethernet1/81
+
+      interface Ethernet1/82
+
+      interface Ethernet1/83
+
+      interface Ethernet1/84
+
+      interface Ethernet1/85
+
+      interface Ethernet1/86
+
+      interface Ethernet1/87
+
+      interface Ethernet1/88
+
+      interface Ethernet1/89
+
+      interface Ethernet1/90
+
+      interface Ethernet1/91
+
+      interface Ethernet1/92
+
+      interface Ethernet1/93
+
+      interface Ethernet1/94
+
+      interface Ethernet1/95
+
+      interface Ethernet1/96
+
+      interface Ethernet1/97
+
+      interface Ethernet1/98
+
+      interface Ethernet1/99
+
+      interface Ethernet1/100
+
+      interface Ethernet1/101
+
+      interface Ethernet1/102
+
+      interface Ethernet1/103
+
+      interface Ethernet1/104
+
+      interface Ethernet1/105
+
+      interface Ethernet1/106
+
+      interface Ethernet1/107
+
+      interface Ethernet1/108
+
+      interface Ethernet1/109
+
+      interface Ethernet1/110
+
+      interface Ethernet1/111
+
+      interface Ethernet1/112
+
+      interface Ethernet1/113
+
+      interface Ethernet1/114
+
+      interface Ethernet1/115
+
+      interface Ethernet1/116
+
+      interface Ethernet1/117
+
+      interface Ethernet1/118
+
+      interface Ethernet1/119
+
+      interface Ethernet1/120
+
+      interface Ethernet1/121
+
+      interface Ethernet1/122
+
+      interface Ethernet1/123
+
+      interface Ethernet1/124
+
+      interface Ethernet1/125
+
+      interface Ethernet1/126
+
+      interface Ethernet1/127
+
+      interface Ethernet1/128
+
+      interface mgmt0
+        no cdp enable
+        vrf member management
+        ip address 10.75.202.12/24
+      line console
+        exec-timeout 0
+        terminal width  511
+      line vty
+      boot nxos bootflash:/nxos.9.2.3.bin
+
+      no logging console
+    image_definition: nxosv9000-9-2-3
+    ram: 8192
+    cpus: 4
+    tags: []
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        slot: 0
+        label: mgmt0
+        type: physical
+      - id: i2
+        slot: 1
+        label: Ethernet1/1
+        type: physical
+      - id: i3
+        slot: 2
+        label: Ethernet1/2
+        type: physical
+      - id: i4
+        slot: 3
+        label: Ethernet1/3
+        type: physical
+  - id: n2
+    label: unmanaged-switch-0
+    node_definition: unmanaged_switch
+    x: -750
+    y: -50
+    configuration: ''
+    tags: []
+    interfaces:
+      - id: i0
+        slot: 0
+        label: port0
+        type: physical
+      - id: i1
+        slot: 1
+        label: port1
+        type: physical
+      - id: i2
+        slot: 2
+        label: port2
+        type: physical
+      - id: i3
+        slot: 3
+        label: port3
+        type: physical
+      - id: i4
+        slot: 4
+        label: port4
+        type: physical
+      - id: i5
+        slot: 5
+        label: port5
+        type: physical
+      - id: i6
+        slot: 6
+        label: port6
+        type: physical
+      - id: i7
+        slot: 7
+        label: port7
+        type: physical
+  - id: n3
+    label: ext-conn-0
+    node_definition: external_connector
+    x: -750
+    y: -150
+    configuration: bridge1
+    tags: []
+    interfaces:
+      - id: i0
+        slot: 0
+        label: port
+        type: physical
+  - id: n4
+    label: site1-bgwspine1
+    node_definition: nxosv9000
+    x: -550
+    y: 0
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Mar 25 06:46:39 2020
+      !Time: Wed Mar 25 06:46:42 2020
+
+      version 9.2(3) Bios:version
+      hostname site1-bgwspine1
+      vdc site1-bgwspine1 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource u4route-mem minimum 128 maximum 128
+        limit-resource u6route-mem minimum 96 maximum 96
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      username admin password 5 $5$EfXIVzmc$KoFMrhg7WYFLf43GftuWO6PpNiLAVBSTsQaW690azH6  role network-admin
+      username cisco password 5 $5$w/5AaPe2$u4ardzUYjxS4GxUfUfC9WklvKYRyJcHTm/Fne/vQ9U5  role network-admin
+      username cisco passphrase  lifetime 99999 warntime 14 gracetime 3
+      ip domain-lookup
+      snmp-server user admin network-admin auth md5 0x1cdd73b0b1c0b31f2c92bb54776be5eb priv 0x1cdd73b0b1c0b31f2c92bb54776be5eb localizedkey
+      rmon event 1 description FATAL(1) owner PMON@FATAL
+      rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 description ERROR(3) owner PMON@ERROR
+      rmon event 4 description WARNING(4) owner PMON@WARNING
+      rmon event 5 description INFORMATION(5) owner PMON@INFO
+
+      vlan 1
+
+      vrf context management
+
+      interface Ethernet1/1
+
+      interface Ethernet1/2
+
+      interface Ethernet1/3
+
+      interface Ethernet1/4
+
+      interface Ethernet1/5
+
+      interface Ethernet1/6
+
+      interface Ethernet1/7
+
+      interface Ethernet1/8
+
+      interface Ethernet1/9
+
+      interface Ethernet1/10
+
+      interface Ethernet1/11
+
+      interface Ethernet1/12
+
+      interface Ethernet1/13
+
+      interface Ethernet1/14
+
+      interface Ethernet1/15
+
+      interface Ethernet1/16
+
+      interface Ethernet1/17
+
+      interface Ethernet1/18
+
+      interface Ethernet1/19
+
+      interface Ethernet1/20
+
+      interface Ethernet1/21
+
+      interface Ethernet1/22
+
+      interface Ethernet1/23
+
+      interface Ethernet1/24
+
+      interface Ethernet1/25
+
+      interface Ethernet1/26
+
+      interface Ethernet1/27
+
+      interface Ethernet1/28
+
+      interface Ethernet1/29
+
+      interface Ethernet1/30
+
+      interface Ethernet1/31
+
+      interface Ethernet1/32
+
+      interface Ethernet1/33
+
+      interface Ethernet1/34
+
+      interface Ethernet1/35
+
+      interface Ethernet1/36
+
+      interface Ethernet1/37
+
+      interface Ethernet1/38
+
+      interface Ethernet1/39
+
+      interface Ethernet1/40
+
+      interface Ethernet1/41
+
+      interface Ethernet1/42
+
+      interface Ethernet1/43
+
+      interface Ethernet1/44
+
+      interface Ethernet1/45
+
+      interface Ethernet1/46
+
+      interface Ethernet1/47
+
+      interface Ethernet1/48
+
+      interface Ethernet1/49
+
+      interface Ethernet1/50
+
+      interface Ethernet1/51
+
+      interface Ethernet1/52
+
+      interface Ethernet1/53
+
+      interface Ethernet1/54
+
+      interface Ethernet1/55
+
+      interface Ethernet1/56
+
+      interface Ethernet1/57
+
+      interface Ethernet1/58
+
+      interface Ethernet1/59
+
+      interface Ethernet1/60
+
+      interface Ethernet1/61
+
+      interface Ethernet1/62
+
+      interface Ethernet1/63
+
+      interface Ethernet1/64
+
+      interface Ethernet1/65
+
+      interface Ethernet1/66
+
+      interface Ethernet1/67
+
+      interface Ethernet1/68
+
+      interface Ethernet1/69
+
+      interface Ethernet1/70
+
+      interface Ethernet1/71
+
+      interface Ethernet1/72
+
+      interface Ethernet1/73
+
+      interface Ethernet1/74
+
+      interface Ethernet1/75
+
+      interface Ethernet1/76
+
+      interface Ethernet1/77
+
+      interface Ethernet1/78
+
+      interface Ethernet1/79
+
+      interface Ethernet1/80
+
+      interface Ethernet1/81
+
+      interface Ethernet1/82
+
+      interface Ethernet1/83
+
+      interface Ethernet1/84
+
+      interface Ethernet1/85
+
+      interface Ethernet1/86
+
+      interface Ethernet1/87
+
+      interface Ethernet1/88
+
+      interface Ethernet1/89
+
+      interface Ethernet1/90
+
+      interface Ethernet1/91
+
+      interface Ethernet1/92
+
+      interface Ethernet1/93
+
+      interface Ethernet1/94
+
+      interface Ethernet1/95
+
+      interface Ethernet1/96
+
+      interface Ethernet1/97
+
+      interface Ethernet1/98
+
+      interface Ethernet1/99
+
+      interface Ethernet1/100
+
+      interface Ethernet1/101
+
+      interface Ethernet1/102
+
+      interface Ethernet1/103
+
+      interface Ethernet1/104
+
+      interface Ethernet1/105
+
+      interface Ethernet1/106
+
+      interface Ethernet1/107
+
+      interface Ethernet1/108
+
+      interface Ethernet1/109
+
+      interface Ethernet1/110
+
+      interface Ethernet1/111
+
+      interface Ethernet1/112
+
+      interface Ethernet1/113
+
+      interface Ethernet1/114
+
+      interface Ethernet1/115
+
+      interface Ethernet1/116
+
+      interface Ethernet1/117
+
+      interface Ethernet1/118
+
+      interface Ethernet1/119
+
+      interface Ethernet1/120
+
+      interface Ethernet1/121
+
+      interface Ethernet1/122
+
+      interface Ethernet1/123
+
+      interface Ethernet1/124
+
+      interface Ethernet1/125
+
+      interface Ethernet1/126
+
+      interface Ethernet1/127
+
+      interface Ethernet1/128
+
+      interface mgmt0
+        no cdp enable
+        vrf member management
+        ip address 10.75.202.13/24
+      line console
+        exec-timeout 0
+        terminal width  511
+      line vty
+      boot nxos bootflash:/nxos.9.2.3.bin
+
+      no logging console
+    image_definition: nxosv9000-9-2-3
+    ram: 8192
+    cpus: 4
+    tags: []
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        slot: 0
+        label: mgmt0
+        type: physical
+      - id: i2
+        slot: 1
+        label: Ethernet1/1
+        type: physical
+      - id: i3
+        slot: 2
+        label: Ethernet1/2
+        type: physical
+      - id: i4
+        slot: 3
+        label: Ethernet1/3
+        type: physical
+      - id: i5
+        slot: 4
+        label: Ethernet1/4
+        type: physical
+  - id: n5
+    label: site1-bgwspine2
+    node_definition: nxosv9000
+    x: -400
+    y: 0
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Mar 25 06:46:42 2020
+      !Time: Wed Mar 25 06:46:44 2020
+
+      version 9.2(3) Bios:version
+      hostname site1-bgwspine2
+      vdc site1-bgwspine2 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource u4route-mem minimum 128 maximum 128
+        limit-resource u6route-mem minimum 96 maximum 96
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      username admin password 5 $5$E38bIWTI$tj9o4rI58JgTF5IxPSIH7IZYEXqlTw1iyDb/a2snzz0  role network-admin
+      username cisco password 5 $5$g70Jf03v$XnWFfumtuTyPFdhZ1sxO3zhzLzm0Xcq1CZE4M9K2l1/  role network-admin
+      username cisco passphrase  lifetime 99999 warntime 14 gracetime 3
+      ip domain-lookup
+      snmp-server user admin network-admin auth md5 0x1073ec46903ddbeb48fe1a1e026799fd priv 0x1073ec46903ddbeb48fe1a1e026799fd localizedkey
+      rmon event 1 description FATAL(1) owner PMON@FATAL
+      rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 description ERROR(3) owner PMON@ERROR
+      rmon event 4 description WARNING(4) owner PMON@WARNING
+      rmon event 5 description INFORMATION(5) owner PMON@INFO
+
+      vlan 1
+
+      vrf context management
+
+      interface Ethernet1/1
+
+      interface Ethernet1/2
+
+      interface Ethernet1/3
+
+      interface Ethernet1/4
+
+      interface Ethernet1/5
+
+      interface Ethernet1/6
+
+      interface Ethernet1/7
+
+      interface Ethernet1/8
+
+      interface Ethernet1/9
+
+      interface Ethernet1/10
+
+      interface Ethernet1/11
+
+      interface Ethernet1/12
+
+      interface Ethernet1/13
+
+      interface Ethernet1/14
+
+      interface Ethernet1/15
+
+      interface Ethernet1/16
+
+      interface Ethernet1/17
+
+      interface Ethernet1/18
+
+      interface Ethernet1/19
+
+      interface Ethernet1/20
+
+      interface Ethernet1/21
+
+      interface Ethernet1/22
+
+      interface Ethernet1/23
+
+      interface Ethernet1/24
+
+      interface Ethernet1/25
+
+      interface Ethernet1/26
+
+      interface Ethernet1/27
+
+      interface Ethernet1/28
+
+      interface Ethernet1/29
+
+      interface Ethernet1/30
+
+      interface Ethernet1/31
+
+      interface Ethernet1/32
+
+      interface Ethernet1/33
+
+      interface Ethernet1/34
+
+      interface Ethernet1/35
+
+      interface Ethernet1/36
+
+      interface Ethernet1/37
+
+      interface Ethernet1/38
+
+      interface Ethernet1/39
+
+      interface Ethernet1/40
+
+      interface Ethernet1/41
+
+      interface Ethernet1/42
+
+      interface Ethernet1/43
+
+      interface Ethernet1/44
+
+      interface Ethernet1/45
+
+      interface Ethernet1/46
+
+      interface Ethernet1/47
+
+      interface Ethernet1/48
+
+      interface Ethernet1/49
+
+      interface Ethernet1/50
+
+      interface Ethernet1/51
+
+      interface Ethernet1/52
+
+      interface Ethernet1/53
+
+      interface Ethernet1/54
+
+      interface Ethernet1/55
+
+      interface Ethernet1/56
+
+      interface Ethernet1/57
+
+      interface Ethernet1/58
+
+      interface Ethernet1/59
+
+      interface Ethernet1/60
+
+      interface Ethernet1/61
+
+      interface Ethernet1/62
+
+      interface Ethernet1/63
+
+      interface Ethernet1/64
+
+      interface Ethernet1/65
+
+      interface Ethernet1/66
+
+      interface Ethernet1/67
+
+      interface Ethernet1/68
+
+      interface Ethernet1/69
+
+      interface Ethernet1/70
+
+      interface Ethernet1/71
+
+      interface Ethernet1/72
+
+      interface Ethernet1/73
+
+      interface Ethernet1/74
+
+      interface Ethernet1/75
+
+      interface Ethernet1/76
+
+      interface Ethernet1/77
+
+      interface Ethernet1/78
+
+      interface Ethernet1/79
+
+      interface Ethernet1/80
+
+      interface Ethernet1/81
+
+      interface Ethernet1/82
+
+      interface Ethernet1/83
+
+      interface Ethernet1/84
+
+      interface Ethernet1/85
+
+      interface Ethernet1/86
+
+      interface Ethernet1/87
+
+      interface Ethernet1/88
+
+      interface Ethernet1/89
+
+      interface Ethernet1/90
+
+      interface Ethernet1/91
+
+      interface Ethernet1/92
+
+      interface Ethernet1/93
+
+      interface Ethernet1/94
+
+      interface Ethernet1/95
+
+      interface Ethernet1/96
+
+      interface Ethernet1/97
+
+      interface Ethernet1/98
+
+      interface Ethernet1/99
+
+      interface Ethernet1/100
+
+      interface Ethernet1/101
+
+      interface Ethernet1/102
+
+      interface Ethernet1/103
+
+      interface Ethernet1/104
+
+      interface Ethernet1/105
+
+      interface Ethernet1/106
+
+      interface Ethernet1/107
+
+      interface Ethernet1/108
+
+      interface Ethernet1/109
+
+      interface Ethernet1/110
+
+      interface Ethernet1/111
+
+      interface Ethernet1/112
+
+      interface Ethernet1/113
+
+      interface Ethernet1/114
+
+      interface Ethernet1/115
+
+      interface Ethernet1/116
+
+      interface Ethernet1/117
+
+      interface Ethernet1/118
+
+      interface Ethernet1/119
+
+      interface Ethernet1/120
+
+      interface Ethernet1/121
+
+      interface Ethernet1/122
+
+      interface Ethernet1/123
+
+      interface Ethernet1/124
+
+      interface Ethernet1/125
+
+      interface Ethernet1/126
+
+      interface Ethernet1/127
+
+      interface Ethernet1/128
+
+      interface mgmt0
+        no cdp enable
+        vrf member management
+        ip address 10.75.202.14/24
+      line console
+        exec-timeout 0
+        terminal width  511
+      line vty
+      boot nxos bootflash:/nxos.9.2.3.bin
+
+      no logging console
+    image_definition: nxosv9000-9-2-3
+    ram: 8192
+    cpus: 4
+    tags: []
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        slot: 0
+        label: mgmt0
+        type: physical
+      - id: i2
+        slot: 1
+        label: Ethernet1/1
+        type: physical
+      - id: i3
+        slot: 2
+        label: Ethernet1/2
+        type: physical
+      - id: i4
+        slot: 3
+        label: Ethernet1/3
+        type: physical
+      - id: i5
+        slot: 4
+        label: Ethernet1/4
+        type: physical
+  - id: n6
+    label: super-spine1
+    node_definition: nxosv9000
+    x: -300
+    y: -200
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Mar 25 05:10:43 2020
+      !Time: Wed Mar 25 05:10:45 2020
+
+      version 9.2(3) Bios:version
+      hostname super-spine1
+      vdc super-spine1 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource u4route-mem minimum 128 maximum 128
+        limit-resource u6route-mem minimum 96 maximum 96
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      username admin password 5 $5$tSHj4p4d$uN0Hghjuj3HfXM98pVEcMsqymSJGm2.7byZmO0Cdy.D  role network-admin
+      ip domain-lookup
+      snmp-server user admin network-admin auth md5 0xda42c5a90b576c6e91f7ae2a8f7e4c6a priv 0xda42c5a90b576c6e91f7ae2a8f7e4c6a localizedkey
+      rmon event 1 description FATAL(1) owner PMON@FATAL
+      rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 description ERROR(3) owner PMON@ERROR
+      rmon event 4 description WARNING(4) owner PMON@WARNING
+      rmon event 5 description INFORMATION(5) owner PMON@INFO
+
+      vlan 1
+
+      vrf context management
+
+      interface Ethernet1/1
+
+      interface Ethernet1/2
+
+      interface Ethernet1/3
+
+      interface Ethernet1/4
+
+      interface Ethernet1/5
+
+      interface Ethernet1/6
+
+      interface Ethernet1/7
+
+      interface Ethernet1/8
+
+      interface Ethernet1/9
+
+      interface Ethernet1/10
+
+      interface Ethernet1/11
+
+      interface Ethernet1/12
+
+      interface Ethernet1/13
+
+      interface Ethernet1/14
+
+      interface Ethernet1/15
+
+      interface Ethernet1/16
+
+      interface Ethernet1/17
+
+      interface Ethernet1/18
+
+      interface Ethernet1/19
+
+      interface Ethernet1/20
+
+      interface Ethernet1/21
+
+      interface Ethernet1/22
+
+      interface Ethernet1/23
+
+      interface Ethernet1/24
+
+      interface Ethernet1/25
+
+      interface Ethernet1/26
+
+      interface Ethernet1/27
+
+      interface Ethernet1/28
+
+      interface Ethernet1/29
+
+      interface Ethernet1/30
+
+      interface Ethernet1/31
+
+      interface Ethernet1/32
+
+      interface Ethernet1/33
+
+      interface Ethernet1/34
+
+      interface Ethernet1/35
+
+      interface Ethernet1/36
+
+      interface Ethernet1/37
+
+      interface Ethernet1/38
+
+      interface Ethernet1/39
+
+      interface Ethernet1/40
+
+      interface Ethernet1/41
+
+      interface Ethernet1/42
+
+      interface Ethernet1/43
+
+      interface Ethernet1/44
+
+      interface Ethernet1/45
+
+      interface Ethernet1/46
+
+      interface Ethernet1/47
+
+      interface Ethernet1/48
+
+      interface Ethernet1/49
+
+      interface Ethernet1/50
+
+      interface Ethernet1/51
+
+      interface Ethernet1/52
+
+      interface Ethernet1/53
+
+      interface Ethernet1/54
+
+      interface Ethernet1/55
+
+      interface Ethernet1/56
+
+      interface Ethernet1/57
+
+      interface Ethernet1/58
+
+      interface Ethernet1/59
+
+      interface Ethernet1/60
+
+      interface Ethernet1/61
+
+      interface Ethernet1/62
+
+      interface Ethernet1/63
+
+      interface Ethernet1/64
+
+      interface Ethernet1/65
+
+      interface Ethernet1/66
+
+      interface Ethernet1/67
+
+      interface Ethernet1/68
+
+      interface Ethernet1/69
+
+      interface Ethernet1/70
+
+      interface Ethernet1/71
+
+      interface Ethernet1/72
+
+      interface Ethernet1/73
+
+      interface Ethernet1/74
+
+      interface Ethernet1/75
+
+      interface Ethernet1/76
+
+      interface Ethernet1/77
+
+      interface Ethernet1/78
+
+      interface Ethernet1/79
+
+      interface Ethernet1/80
+
+      interface Ethernet1/81
+
+      interface Ethernet1/82
+
+      interface Ethernet1/83
+
+      interface Ethernet1/84
+
+      interface Ethernet1/85
+
+      interface Ethernet1/86
+
+      interface Ethernet1/87
+
+      interface Ethernet1/88
+
+      interface Ethernet1/89
+
+      interface Ethernet1/90
+
+      interface Ethernet1/91
+
+      interface Ethernet1/92
+
+      interface Ethernet1/93
+
+      interface Ethernet1/94
+
+      interface Ethernet1/95
+
+      interface Ethernet1/96
+
+      interface Ethernet1/97
+
+      interface Ethernet1/98
+
+      interface Ethernet1/99
+
+      interface Ethernet1/100
+
+      interface Ethernet1/101
+
+      interface Ethernet1/102
+
+      interface Ethernet1/103
+
+      interface Ethernet1/104
+
+      interface Ethernet1/105
+
+      interface Ethernet1/106
+
+      interface Ethernet1/107
+
+      interface Ethernet1/108
+
+      interface Ethernet1/109
+
+      interface Ethernet1/110
+
+      interface Ethernet1/111
+
+      interface Ethernet1/112
+
+      interface Ethernet1/113
+
+      interface Ethernet1/114
+
+      interface Ethernet1/115
+
+      interface Ethernet1/116
+
+      interface Ethernet1/117
+
+      interface Ethernet1/118
+
+      interface Ethernet1/119
+
+      interface Ethernet1/120
+
+      interface Ethernet1/121
+
+      interface Ethernet1/122
+
+      interface Ethernet1/123
+
+      interface Ethernet1/124
+
+      interface Ethernet1/125
+
+      interface Ethernet1/126
+
+      interface Ethernet1/127
+
+      interface Ethernet1/128
+
+      interface mgmt0
+        vrf member management
+        ip address 10.75.202.31/24
+      line console
+        exec-timeout 0
+        terminal width  511
+      line vty
+      boot nxos bootflash:/nxos.9.2.3.bin
+
+      no logging console
+    image_definition: nxosv9000-9-2-3
+    ram: 8192
+    cpus: 4
+    tags: []
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        slot: 0
+        label: mgmt0
+        type: physical
+      - id: i2
+        slot: 1
+        label: Ethernet1/1
+        type: physical
+      - id: i3
+        slot: 2
+        label: Ethernet1/2
+        type: physical
+      - id: i4
+        slot: 3
+        label: Ethernet1/3
+        type: physical
+      - id: i5
+        slot: 4
+        label: Ethernet1/4
+        type: physical
+  - id: n8
+    label: site2-bgwspine1
+    node_definition: nxosv9000
+    x: -50
+    y: 0
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Mar 25 04:26:02 2020
+      !Time: Wed Mar 25 04:26:05 2020
+
+      version 9.2(3) Bios:version
+      hostname site2-bgwspine1
+      vdc site2-bgwspine1 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource u4route-mem minimum 128 maximum 128
+        limit-resource u6route-mem minimum 96 maximum 96
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      username admin password 5 $5$vtXXqzdl$p8iZezeVwt1cqkMbhfPplqpBK0Z3V05WyslryUAio8/  role network-admin
+      username cisco password 5 $5$jh3LNGvO$g7FXPbraazMSjO9/Ez3aPg3NTXGI75m3B8JCMuDpKk7  role network-admin
+      username cisco passphrase  lifetime 99999 warntime 14 gracetime 3
+      ip domain-lookup
+      snmp-server user admin network-admin auth md5 0x9727f26958b134c66511ecae825f5cd5 priv 0x9727f26958b134c66511ecae825f5cd5 localizedkey
+      snmp-server user cisco network-admin auth md5 0x7775459e7c3a9e3977149c7b7f9edcf9 priv 0x7775459e7c3a9e3977149c7b7f9edcf9 localizedkey
+      rmon event 1 description FATAL(1) owner PMON@FATAL
+      rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 description ERROR(3) owner PMON@ERROR
+      rmon event 4 description WARNING(4) owner PMON@WARNING
+      rmon event 5 description INFORMATION(5) owner PMON@INFO
+
+      vlan 1
+
+      vrf context management
+
+      interface Ethernet1/1
+
+      interface Ethernet1/2
+
+      interface Ethernet1/3
+
+      interface Ethernet1/4
+
+      interface Ethernet1/5
+
+      interface Ethernet1/6
+
+      interface Ethernet1/7
+
+      interface Ethernet1/8
+
+      interface Ethernet1/9
+
+      interface Ethernet1/10
+
+      interface Ethernet1/11
+
+      interface Ethernet1/12
+
+      interface Ethernet1/13
+
+      interface Ethernet1/14
+
+      interface Ethernet1/15
+
+      interface Ethernet1/16
+
+      interface Ethernet1/17
+
+      interface Ethernet1/18
+
+      interface Ethernet1/19
+
+      interface Ethernet1/20
+
+      interface Ethernet1/21
+
+      interface Ethernet1/22
+
+      interface Ethernet1/23
+
+      interface Ethernet1/24
+
+      interface Ethernet1/25
+
+      interface Ethernet1/26
+
+      interface Ethernet1/27
+
+      interface Ethernet1/28
+
+      interface Ethernet1/29
+
+      interface Ethernet1/30
+
+      interface Ethernet1/31
+
+      interface Ethernet1/32
+
+      interface Ethernet1/33
+
+      interface Ethernet1/34
+
+      interface Ethernet1/35
+
+      interface Ethernet1/36
+
+      interface Ethernet1/37
+
+      interface Ethernet1/38
+
+      interface Ethernet1/39
+
+      interface Ethernet1/40
+
+      interface Ethernet1/41
+
+      interface Ethernet1/42
+
+      interface Ethernet1/43
+
+      interface Ethernet1/44
+
+      interface Ethernet1/45
+
+      interface Ethernet1/46
+
+      interface Ethernet1/47
+
+      interface Ethernet1/48
+
+      interface Ethernet1/49
+
+      interface Ethernet1/50
+
+      interface Ethernet1/51
+
+      interface Ethernet1/52
+
+      interface Ethernet1/53
+
+      interface Ethernet1/54
+
+      interface Ethernet1/55
+
+      interface Ethernet1/56
+
+      interface Ethernet1/57
+
+      interface Ethernet1/58
+
+      interface Ethernet1/59
+
+      interface Ethernet1/60
+
+      interface Ethernet1/61
+
+      interface Ethernet1/62
+
+      interface Ethernet1/63
+
+      interface Ethernet1/64
+
+      interface Ethernet1/65
+
+      interface Ethernet1/66
+
+      interface Ethernet1/67
+
+      interface Ethernet1/68
+
+      interface Ethernet1/69
+
+      interface Ethernet1/70
+
+      interface Ethernet1/71
+
+      interface Ethernet1/72
+
+      interface Ethernet1/73
+
+      interface Ethernet1/74
+
+      interface Ethernet1/75
+
+      interface Ethernet1/76
+
+      interface Ethernet1/77
+
+      interface Ethernet1/78
+
+      interface Ethernet1/79
+
+      interface Ethernet1/80
+
+      interface Ethernet1/81
+
+      interface Ethernet1/82
+
+      interface Ethernet1/83
+
+      interface Ethernet1/84
+
+      interface Ethernet1/85
+
+      interface Ethernet1/86
+
+      interface Ethernet1/87
+
+      interface Ethernet1/88
+
+      interface Ethernet1/89
+
+      interface Ethernet1/90
+
+      interface Ethernet1/91
+
+      interface Ethernet1/92
+
+      interface Ethernet1/93
+
+      interface Ethernet1/94
+
+      interface Ethernet1/95
+
+      interface Ethernet1/96
+
+      interface Ethernet1/97
+
+      interface Ethernet1/98
+
+      interface Ethernet1/99
+
+      interface Ethernet1/100
+
+      interface Ethernet1/101
+
+      interface Ethernet1/102
+
+      interface Ethernet1/103
+
+      interface Ethernet1/104
+
+      interface Ethernet1/105
+
+      interface Ethernet1/106
+
+      interface Ethernet1/107
+
+      interface Ethernet1/108
+
+      interface Ethernet1/109
+
+      interface Ethernet1/110
+
+      interface Ethernet1/111
+
+      interface Ethernet1/112
+
+      interface Ethernet1/113
+
+      interface Ethernet1/114
+
+      interface Ethernet1/115
+
+      interface Ethernet1/116
+
+      interface Ethernet1/117
+
+      interface Ethernet1/118
+
+      interface Ethernet1/119
+
+      interface Ethernet1/120
+
+      interface Ethernet1/121
+
+      interface Ethernet1/122
+
+      interface Ethernet1/123
+
+      interface Ethernet1/124
+
+      interface Ethernet1/125
+
+      interface Ethernet1/126
+
+      interface Ethernet1/127
+
+      interface Ethernet1/128
+
+      interface mgmt0
+        vrf member management
+        ip address 10.75.202.23/24
+      line console
+        exec-timeout 0
+        terminal width  511
+      line vty
+      boot nxos bootflash:/nxos.9.2.3.bin
+
+      no logging console
+    image_definition: nxosv9000-9-2-3
+    ram: 8192
+    cpus: 4
+    tags: []
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        slot: 0
+        label: mgmt0
+        type: physical
+      - id: i2
+        slot: 1
+        label: Ethernet1/1
+        type: physical
+      - id: i3
+        slot: 2
+        label: Ethernet1/2
+        type: physical
+      - id: i4
+        slot: 3
+        label: Ethernet1/3
+        type: physical
+      - id: i5
+        slot: 4
+        label: Ethernet1/4
+        type: physical
+  - id: n9
+    label: site2-bgwspine2
+    node_definition: nxosv9000
+    x: 100
+    y: 0
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Mar 25 04:26:48 2020
+      !Time: Wed Mar 25 04:26:50 2020
+
+      version 9.2(3) Bios:version
+      hostname site2-bgpspine2
+      vdc site2-bgpspine2 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource u4route-mem minimum 128 maximum 128
+        limit-resource u6route-mem minimum 96 maximum 96
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      username admin password 5 $5$slnLAAUF$DYR70eDjNigiCM5JVXM1CGdmyUYXKZDY3yh14fsYOA4  role network-admin
+      username cisco password 5 $5$wKRh2HAI$JVHowZdhcFRhLxebLnO9ik.npyryuyroVnHBJGxfcx4  role network-admin
+      username cisco passphrase  lifetime 99999 warntime 14 gracetime 3
+      ip domain-lookup
+      snmp-server user admin network-admin auth md5 0xe8558af69e558fc12a04287dec0b3c43 priv 0xe8558af69e558fc12a04287dec0b3c43 localizedkey
+      snmp-server user cisco network-admin auth md5 0x124309597e80a262c3473019859d7534 priv 0x124309597e80a262c3473019859d7534 localizedkey
+      rmon event 1 description FATAL(1) owner PMON@FATAL
+      rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 description ERROR(3) owner PMON@ERROR
+      rmon event 4 description WARNING(4) owner PMON@WARNING
+      rmon event 5 description INFORMATION(5) owner PMON@INFO
+
+      vlan 1
+
+      vrf context management
+
+      interface Ethernet1/1
+
+      interface Ethernet1/2
+
+      interface Ethernet1/3
+
+      interface Ethernet1/4
+
+      interface Ethernet1/5
+
+      interface Ethernet1/6
+
+      interface Ethernet1/7
+
+      interface Ethernet1/8
+
+      interface Ethernet1/9
+
+      interface Ethernet1/10
+
+      interface Ethernet1/11
+
+      interface Ethernet1/12
+
+      interface Ethernet1/13
+
+      interface Ethernet1/14
+
+      interface Ethernet1/15
+
+      interface Ethernet1/16
+
+      interface Ethernet1/17
+
+      interface Ethernet1/18
+
+      interface Ethernet1/19
+
+      interface Ethernet1/20
+
+      interface Ethernet1/21
+
+      interface Ethernet1/22
+
+      interface Ethernet1/23
+
+      interface Ethernet1/24
+
+      interface Ethernet1/25
+
+      interface Ethernet1/26
+
+      interface Ethernet1/27
+
+      interface Ethernet1/28
+
+      interface Ethernet1/29
+
+      interface Ethernet1/30
+
+      interface Ethernet1/31
+
+      interface Ethernet1/32
+
+      interface Ethernet1/33
+
+      interface Ethernet1/34
+
+      interface Ethernet1/35
+
+      interface Ethernet1/36
+
+      interface Ethernet1/37
+
+      interface Ethernet1/38
+
+      interface Ethernet1/39
+
+      interface Ethernet1/40
+
+      interface Ethernet1/41
+
+      interface Ethernet1/42
+
+      interface Ethernet1/43
+
+      interface Ethernet1/44
+
+      interface Ethernet1/45
+
+      interface Ethernet1/46
+
+      interface Ethernet1/47
+
+      interface Ethernet1/48
+
+      interface Ethernet1/49
+
+      interface Ethernet1/50
+
+      interface Ethernet1/51
+
+      interface Ethernet1/52
+
+      interface Ethernet1/53
+
+      interface Ethernet1/54
+
+      interface Ethernet1/55
+
+      interface Ethernet1/56
+
+      interface Ethernet1/57
+
+      interface Ethernet1/58
+
+      interface Ethernet1/59
+
+      interface Ethernet1/60
+
+      interface Ethernet1/61
+
+      interface Ethernet1/62
+
+      interface Ethernet1/63
+
+      interface Ethernet1/64
+
+      interface Ethernet1/65
+
+      interface Ethernet1/66
+
+      interface Ethernet1/67
+
+      interface Ethernet1/68
+
+      interface Ethernet1/69
+
+      interface Ethernet1/70
+
+      interface Ethernet1/71
+
+      interface Ethernet1/72
+
+      interface Ethernet1/73
+
+      interface Ethernet1/74
+
+      interface Ethernet1/75
+
+      interface Ethernet1/76
+
+      interface Ethernet1/77
+
+      interface Ethernet1/78
+
+      interface Ethernet1/79
+
+      interface Ethernet1/80
+
+      interface Ethernet1/81
+
+      interface Ethernet1/82
+
+      interface Ethernet1/83
+
+      interface Ethernet1/84
+
+      interface Ethernet1/85
+
+      interface Ethernet1/86
+
+      interface Ethernet1/87
+
+      interface Ethernet1/88
+
+      interface Ethernet1/89
+
+      interface Ethernet1/90
+
+      interface Ethernet1/91
+
+      interface Ethernet1/92
+
+      interface Ethernet1/93
+
+      interface Ethernet1/94
+
+      interface Ethernet1/95
+
+      interface Ethernet1/96
+
+      interface Ethernet1/97
+
+      interface Ethernet1/98
+
+      interface Ethernet1/99
+
+      interface Ethernet1/100
+
+      interface Ethernet1/101
+
+      interface Ethernet1/102
+
+      interface Ethernet1/103
+
+      interface Ethernet1/104
+
+      interface Ethernet1/105
+
+      interface Ethernet1/106
+
+      interface Ethernet1/107
+
+      interface Ethernet1/108
+
+      interface Ethernet1/109
+
+      interface Ethernet1/110
+
+      interface Ethernet1/111
+
+      interface Ethernet1/112
+
+      interface Ethernet1/113
+
+      interface Ethernet1/114
+
+      interface Ethernet1/115
+
+      interface Ethernet1/116
+
+      interface Ethernet1/117
+
+      interface Ethernet1/118
+
+      interface Ethernet1/119
+
+      interface Ethernet1/120
+
+      interface Ethernet1/121
+
+      interface Ethernet1/122
+
+      interface Ethernet1/123
+
+      interface Ethernet1/124
+
+      interface Ethernet1/125
+
+      interface Ethernet1/126
+
+      interface Ethernet1/127
+
+      interface Ethernet1/128
+
+      interface mgmt0
+        vrf member management
+        ip address 10.75.202.24/24
+      line console
+        exec-timeout 0
+        terminal width  511
+      line vty
+      boot nxos bootflash:/nxos.9.2.3.bin
+
+      no logging console
+    image_definition: nxosv9000-9-2-3
+    ram: 8192
+    cpus: 4
+    tags: []
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        slot: 0
+        label: mgmt0
+        type: physical
+      - id: i2
+        slot: 1
+        label: Ethernet1/1
+        type: physical
+      - id: i3
+        slot: 2
+        label: Ethernet1/2
+        type: physical
+      - id: i4
+        slot: 3
+        label: Ethernet1/3
+        type: physical
+      - id: i5
+        slot: 4
+        label: Ethernet1/4
+        type: physical
+  - id: n10
+    label: site2-leaf1
+    node_definition: nxosv9000
+    x: -50
+    y: 150
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Mar 25 04:26:54 2020
+      !Time: Wed Mar 25 04:26:57 2020
+
+      version 9.2(3) Bios:version
+      hostname site2-leaf1
+      vdc site2-leaf1 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource u4route-mem minimum 128 maximum 128
+        limit-resource u6route-mem minimum 96 maximum 96
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      username admin password 5 $5$36Ab28Rj$cmRWj1Xay/JfGPeN3Gj0WdX0v7yKyikLl0TAF773l92  role network-admin
+      username cisco password 5 $5$YbFw7qP/$H8QjJzpytUzO5V0CVgQDjrgHH6u3eAGfS.aIpIJJni5  role network-admin
+      username cisco passphrase  lifetime 99999 warntime 14 gracetime 3
+      ip domain-lookup
+      snmp-server user admin network-admin auth md5 0xd82dc09cd73a02aed37fcd98ece1559d priv 0xd82dc09cd73a02aed37fcd98ece1559d localizedkey
+      snmp-server user cisco network-admin auth md5 0x2acba472d87382f7d6a5f251a4111b32 priv 0x2acba472d87382f7d6a5f251a4111b32 localizedkey
+      rmon event 1 description FATAL(1) owner PMON@FATAL
+      rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 description ERROR(3) owner PMON@ERROR
+      rmon event 4 description WARNING(4) owner PMON@WARNING
+      rmon event 5 description INFORMATION(5) owner PMON@INFO
+
+      vlan 1
+
+      vrf context management
+
+      interface Ethernet1/1
+
+      interface Ethernet1/2
+
+      interface Ethernet1/3
+
+      interface Ethernet1/4
+
+      interface Ethernet1/5
+
+      interface Ethernet1/6
+
+      interface Ethernet1/7
+
+      interface Ethernet1/8
+
+      interface Ethernet1/9
+
+      interface Ethernet1/10
+
+      interface Ethernet1/11
+
+      interface Ethernet1/12
+
+      interface Ethernet1/13
+
+      interface Ethernet1/14
+
+      interface Ethernet1/15
+
+      interface Ethernet1/16
+
+      interface Ethernet1/17
+
+      interface Ethernet1/18
+
+      interface Ethernet1/19
+
+      interface Ethernet1/20
+
+      interface Ethernet1/21
+
+      interface Ethernet1/22
+
+      interface Ethernet1/23
+
+      interface Ethernet1/24
+
+      interface Ethernet1/25
+
+      interface Ethernet1/26
+
+      interface Ethernet1/27
+
+      interface Ethernet1/28
+
+      interface Ethernet1/29
+
+      interface Ethernet1/30
+
+      interface Ethernet1/31
+
+      interface Ethernet1/32
+
+      interface Ethernet1/33
+
+      interface Ethernet1/34
+
+      interface Ethernet1/35
+
+      interface Ethernet1/36
+
+      interface Ethernet1/37
+
+      interface Ethernet1/38
+
+      interface Ethernet1/39
+
+      interface Ethernet1/40
+
+      interface Ethernet1/41
+
+      interface Ethernet1/42
+
+      interface Ethernet1/43
+
+      interface Ethernet1/44
+
+      interface Ethernet1/45
+
+      interface Ethernet1/46
+
+      interface Ethernet1/47
+
+      interface Ethernet1/48
+
+      interface Ethernet1/49
+
+      interface Ethernet1/50
+
+      interface Ethernet1/51
+
+      interface Ethernet1/52
+
+      interface Ethernet1/53
+
+      interface Ethernet1/54
+
+      interface Ethernet1/55
+
+      interface Ethernet1/56
+
+      interface Ethernet1/57
+
+      interface Ethernet1/58
+
+      interface Ethernet1/59
+
+      interface Ethernet1/60
+
+      interface Ethernet1/61
+
+      interface Ethernet1/62
+
+      interface Ethernet1/63
+
+      interface Ethernet1/64
+
+      interface Ethernet1/65
+
+      interface Ethernet1/66
+
+      interface Ethernet1/67
+
+      interface Ethernet1/68
+
+      interface Ethernet1/69
+
+      interface Ethernet1/70
+
+      interface Ethernet1/71
+
+      interface Ethernet1/72
+
+      interface Ethernet1/73
+
+      interface Ethernet1/74
+
+      interface Ethernet1/75
+
+      interface Ethernet1/76
+
+      interface Ethernet1/77
+
+      interface Ethernet1/78
+
+      interface Ethernet1/79
+
+      interface Ethernet1/80
+
+      interface Ethernet1/81
+
+      interface Ethernet1/82
+
+      interface Ethernet1/83
+
+      interface Ethernet1/84
+
+      interface Ethernet1/85
+
+      interface Ethernet1/86
+
+      interface Ethernet1/87
+
+      interface Ethernet1/88
+
+      interface Ethernet1/89
+
+      interface Ethernet1/90
+
+      interface Ethernet1/91
+
+      interface Ethernet1/92
+
+      interface Ethernet1/93
+
+      interface Ethernet1/94
+
+      interface Ethernet1/95
+
+      interface Ethernet1/96
+
+      interface Ethernet1/97
+
+      interface Ethernet1/98
+
+      interface Ethernet1/99
+
+      interface Ethernet1/100
+
+      interface Ethernet1/101
+
+      interface Ethernet1/102
+
+      interface Ethernet1/103
+
+      interface Ethernet1/104
+
+      interface Ethernet1/105
+
+      interface Ethernet1/106
+
+      interface Ethernet1/107
+
+      interface Ethernet1/108
+
+      interface Ethernet1/109
+
+      interface Ethernet1/110
+
+      interface Ethernet1/111
+
+      interface Ethernet1/112
+
+      interface Ethernet1/113
+
+      interface Ethernet1/114
+
+      interface Ethernet1/115
+
+      interface Ethernet1/116
+
+      interface Ethernet1/117
+
+      interface Ethernet1/118
+
+      interface Ethernet1/119
+
+      interface Ethernet1/120
+
+      interface Ethernet1/121
+
+      interface Ethernet1/122
+
+      interface Ethernet1/123
+
+      interface Ethernet1/124
+
+      interface Ethernet1/125
+
+      interface Ethernet1/126
+
+      interface Ethernet1/127
+
+      interface Ethernet1/128
+
+      interface mgmt0
+        vrf member management
+        ip address 10.75.202.21/24
+      line console
+        exec-timeout 0
+        terminal width  511
+      line vty
+      boot nxos bootflash:/nxos.9.2.3.bin
+
+      no logging console
+    image_definition: nxosv9000-9-2-3
+    ram: 8192
+    cpus: 4
+    tags: []
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        slot: 0
+        label: mgmt0
+        type: physical
+      - id: i2
+        slot: 1
+        label: Ethernet1/1
+        type: physical
+      - id: i3
+        slot: 2
+        label: Ethernet1/2
+        type: physical
+      - id: i4
+        slot: 3
+        label: Ethernet1/3
+        type: physical
+  - id: n11
+    label: site2-leaf2
+    node_definition: nxosv9000
+    x: 100
+    y: 150
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Mar 25 04:27:16 2020
+      !Time: Wed Mar 25 04:27:19 2020
+
+      version 9.2(3) Bios:version
+      hostname site2-leaf2
+      vdc site2-leaf2 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource u4route-mem minimum 128 maximum 128
+        limit-resource u6route-mem minimum 96 maximum 96
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      username admin password 5 $5$g9.lOEFC$khRXjPsggrr4HaNj3BZxRTk1d9QbTuzeUb5JOy/wAR9  role network-admin
+      username cisco password 5 $5$XlIGLXU0$jsbjOBA2kWMFJtyER3tCVJW6vqzLMRoD2gAbxmcpCl3  role network-admin
+      username cisco passphrase  lifetime 99999 warntime 14 gracetime 3
+      ip domain-lookup
+      snmp-server user admin network-admin auth md5 0x05fd5a05123e444cb190f4349782c247 priv 0x05fd5a05123e444cb190f4349782c247 localizedkey
+      snmp-server user cisco network-admin auth md5 0x35fc6154ab653e3a9542a3055ed9919e priv 0x35fc6154ab653e3a9542a3055ed9919e localizedkey
+      rmon event 1 description FATAL(1) owner PMON@FATAL
+      rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 description ERROR(3) owner PMON@ERROR
+      rmon event 4 description WARNING(4) owner PMON@WARNING
+      rmon event 5 description INFORMATION(5) owner PMON@INFO
+
+      vlan 1
+
+      vrf context management
+
+      interface Ethernet1/1
+
+      interface Ethernet1/2
+
+      interface Ethernet1/3
+
+      interface Ethernet1/4
+
+      interface Ethernet1/5
+
+      interface Ethernet1/6
+
+      interface Ethernet1/7
+
+      interface Ethernet1/8
+
+      interface Ethernet1/9
+
+      interface Ethernet1/10
+
+      interface Ethernet1/11
+
+      interface Ethernet1/12
+
+      interface Ethernet1/13
+
+      interface Ethernet1/14
+
+      interface Ethernet1/15
+
+      interface Ethernet1/16
+
+      interface Ethernet1/17
+
+      interface Ethernet1/18
+
+      interface Ethernet1/19
+
+      interface Ethernet1/20
+
+      interface Ethernet1/21
+
+      interface Ethernet1/22
+
+      interface Ethernet1/23
+
+      interface Ethernet1/24
+
+      interface Ethernet1/25
+
+      interface Ethernet1/26
+
+      interface Ethernet1/27
+
+      interface Ethernet1/28
+
+      interface Ethernet1/29
+
+      interface Ethernet1/30
+
+      interface Ethernet1/31
+
+      interface Ethernet1/32
+
+      interface Ethernet1/33
+
+      interface Ethernet1/34
+
+      interface Ethernet1/35
+
+      interface Ethernet1/36
+
+      interface Ethernet1/37
+
+      interface Ethernet1/38
+
+      interface Ethernet1/39
+
+      interface Ethernet1/40
+
+      interface Ethernet1/41
+
+      interface Ethernet1/42
+
+      interface Ethernet1/43
+
+      interface Ethernet1/44
+
+      interface Ethernet1/45
+
+      interface Ethernet1/46
+
+      interface Ethernet1/47
+
+      interface Ethernet1/48
+
+      interface Ethernet1/49
+
+      interface Ethernet1/50
+
+      interface Ethernet1/51
+
+      interface Ethernet1/52
+
+      interface Ethernet1/53
+
+      interface Ethernet1/54
+
+      interface Ethernet1/55
+
+      interface Ethernet1/56
+
+      interface Ethernet1/57
+
+      interface Ethernet1/58
+
+      interface Ethernet1/59
+
+      interface Ethernet1/60
+
+      interface Ethernet1/61
+
+      interface Ethernet1/62
+
+      interface Ethernet1/63
+
+      interface Ethernet1/64
+
+      interface Ethernet1/65
+
+      interface Ethernet1/66
+
+      interface Ethernet1/67
+
+      interface Ethernet1/68
+
+      interface Ethernet1/69
+
+      interface Ethernet1/70
+
+      interface Ethernet1/71
+
+      interface Ethernet1/72
+
+      interface Ethernet1/73
+
+      interface Ethernet1/74
+
+      interface Ethernet1/75
+
+      interface Ethernet1/76
+
+      interface Ethernet1/77
+
+      interface Ethernet1/78
+
+      interface Ethernet1/79
+
+      interface Ethernet1/80
+
+      interface Ethernet1/81
+
+      interface Ethernet1/82
+
+      interface Ethernet1/83
+
+      interface Ethernet1/84
+
+      interface Ethernet1/85
+
+      interface Ethernet1/86
+
+      interface Ethernet1/87
+
+      interface Ethernet1/88
+
+      interface Ethernet1/89
+
+      interface Ethernet1/90
+
+      interface Ethernet1/91
+
+      interface Ethernet1/92
+
+      interface Ethernet1/93
+
+      interface Ethernet1/94
+
+      interface Ethernet1/95
+
+      interface Ethernet1/96
+
+      interface Ethernet1/97
+
+      interface Ethernet1/98
+
+      interface Ethernet1/99
+
+      interface Ethernet1/100
+
+      interface Ethernet1/101
+
+      interface Ethernet1/102
+
+      interface Ethernet1/103
+
+      interface Ethernet1/104
+
+      interface Ethernet1/105
+
+      interface Ethernet1/106
+
+      interface Ethernet1/107
+
+      interface Ethernet1/108
+
+      interface Ethernet1/109
+
+      interface Ethernet1/110
+
+      interface Ethernet1/111
+
+      interface Ethernet1/112
+
+      interface Ethernet1/113
+
+      interface Ethernet1/114
+
+      interface Ethernet1/115
+
+      interface Ethernet1/116
+
+      interface Ethernet1/117
+
+      interface Ethernet1/118
+
+      interface Ethernet1/119
+
+      interface Ethernet1/120
+
+      interface Ethernet1/121
+
+      interface Ethernet1/122
+
+      interface Ethernet1/123
+
+      interface Ethernet1/124
+
+      interface Ethernet1/125
+
+      interface Ethernet1/126
+
+      interface Ethernet1/127
+
+      interface Ethernet1/128
+
+      interface mgmt0
+        vrf member management
+        ip address 10.75.202.22/24
+      line console
+        exec-timeout 0
+        terminal width  511
+      line vty
+      boot nxos bootflash:/nxos.9.2.3.bin
+
+      no logging console
+    image_definition: nxosv9000-9-2-3
+    ram: 8192
+    cpus: 4
+    tags: []
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        slot: 0
+        label: mgmt0
+        type: physical
+      - id: i2
+        slot: 1
+        label: Ethernet1/1
+        type: physical
+      - id: i3
+        slot: 2
+        label: Ethernet1/2
+        type: physical
+      - id: i4
+        slot: 3
+        label: Ethernet1/3
+        type: physical
+  - id: n7
+    label: super-spine2
+    node_definition: nxosv9000
+    x: -150
+    y: -200
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Mar 25 04:31:41 2020
+      !Time: Wed Mar 25 04:31:43 2020
+
+      version 9.2(3) Bios:version
+      hostname super-spine2
+      vdc super-spine2 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource u4route-mem minimum 128 maximum 128
+        limit-resource u6route-mem minimum 96 maximum 96
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      username admin password 5 $5$//NOphuP$251iPODlv/CgVqXWJ0XbgadqXADxEoIgiB12yLvAeQ.  role network-admin
+      ip domain-lookup
+      snmp-server user admin network-admin auth md5 0xe6afab84eb44a0711bce2c2263022b34 priv 0xe6afab84eb44a0711bce2c2263022b34 localizedkey
+      rmon event 1 description FATAL(1) owner PMON@FATAL
+      rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 description ERROR(3) owner PMON@ERROR
+      rmon event 4 description WARNING(4) owner PMON@WARNING
+      rmon event 5 description INFORMATION(5) owner PMON@INFO
+
+      vlan 1
+
+      vrf context management
+
+      interface Ethernet1/1
+
+      interface Ethernet1/2
+
+      interface Ethernet1/3
+
+      interface Ethernet1/4
+
+      interface Ethernet1/5
+
+      interface Ethernet1/6
+
+      interface Ethernet1/7
+
+      interface Ethernet1/8
+
+      interface Ethernet1/9
+
+      interface Ethernet1/10
+
+      interface Ethernet1/11
+
+      interface Ethernet1/12
+
+      interface Ethernet1/13
+
+      interface Ethernet1/14
+
+      interface Ethernet1/15
+
+      interface Ethernet1/16
+
+      interface Ethernet1/17
+
+      interface Ethernet1/18
+
+      interface Ethernet1/19
+
+      interface Ethernet1/20
+
+      interface Ethernet1/21
+
+      interface Ethernet1/22
+
+      interface Ethernet1/23
+
+      interface Ethernet1/24
+
+      interface Ethernet1/25
+
+      interface Ethernet1/26
+
+      interface Ethernet1/27
+
+      interface Ethernet1/28
+
+      interface Ethernet1/29
+
+      interface Ethernet1/30
+
+      interface Ethernet1/31
+
+      interface Ethernet1/32
+
+      interface Ethernet1/33
+
+      interface Ethernet1/34
+
+      interface Ethernet1/35
+
+      interface Ethernet1/36
+
+      interface Ethernet1/37
+
+      interface Ethernet1/38
+
+      interface Ethernet1/39
+
+      interface Ethernet1/40
+
+      interface Ethernet1/41
+
+      interface Ethernet1/42
+
+      interface Ethernet1/43
+
+      interface Ethernet1/44
+
+      interface Ethernet1/45
+
+      interface Ethernet1/46
+
+      interface Ethernet1/47
+
+      interface Ethernet1/48
+
+      interface Ethernet1/49
+
+      interface Ethernet1/50
+
+      interface Ethernet1/51
+
+      interface Ethernet1/52
+
+      interface Ethernet1/53
+
+      interface Ethernet1/54
+
+      interface Ethernet1/55
+
+      interface Ethernet1/56
+
+      interface Ethernet1/57
+
+      interface Ethernet1/58
+
+      interface Ethernet1/59
+
+      interface Ethernet1/60
+
+      interface Ethernet1/61
+
+      interface Ethernet1/62
+
+      interface Ethernet1/63
+
+      interface Ethernet1/64
+
+      interface Ethernet1/65
+
+      interface Ethernet1/66
+
+      interface Ethernet1/67
+
+      interface Ethernet1/68
+
+      interface Ethernet1/69
+
+      interface Ethernet1/70
+
+      interface Ethernet1/71
+
+      interface Ethernet1/72
+
+      interface Ethernet1/73
+
+      interface Ethernet1/74
+
+      interface Ethernet1/75
+
+      interface Ethernet1/76
+
+      interface Ethernet1/77
+
+      interface Ethernet1/78
+
+      interface Ethernet1/79
+
+      interface Ethernet1/80
+
+      interface Ethernet1/81
+
+      interface Ethernet1/82
+
+      interface Ethernet1/83
+
+      interface Ethernet1/84
+
+      interface Ethernet1/85
+
+      interface Ethernet1/86
+
+      interface Ethernet1/87
+
+      interface Ethernet1/88
+
+      interface Ethernet1/89
+
+      interface Ethernet1/90
+
+      interface Ethernet1/91
+
+      interface Ethernet1/92
+
+      interface Ethernet1/93
+
+      interface Ethernet1/94
+
+      interface Ethernet1/95
+
+      interface Ethernet1/96
+
+      interface Ethernet1/97
+
+      interface Ethernet1/98
+
+      interface Ethernet1/99
+
+      interface Ethernet1/100
+
+      interface Ethernet1/101
+
+      interface Ethernet1/102
+
+      interface Ethernet1/103
+
+      interface Ethernet1/104
+
+      interface Ethernet1/105
+
+      interface Ethernet1/106
+
+      interface Ethernet1/107
+
+      interface Ethernet1/108
+
+      interface Ethernet1/109
+
+      interface Ethernet1/110
+
+      interface Ethernet1/111
+
+      interface Ethernet1/112
+
+      interface Ethernet1/113
+
+      interface Ethernet1/114
+
+      interface Ethernet1/115
+
+      interface Ethernet1/116
+
+      interface Ethernet1/117
+
+      interface Ethernet1/118
+
+      interface Ethernet1/119
+
+      interface Ethernet1/120
+
+      interface Ethernet1/121
+
+      interface Ethernet1/122
+
+      interface Ethernet1/123
+
+      interface Ethernet1/124
+
+      interface Ethernet1/125
+
+      interface Ethernet1/126
+
+      interface Ethernet1/127
+
+      interface Ethernet1/128
+
+      interface mgmt0
+        vrf member management
+        ip address 10.75.202.32/24
+      line console
+        exec-timeout 0
+        terminal width  511
+      line vty
+      boot nxos bootflash:/nxos.9.2.3.bin
+
+      no logging console
+    image_definition: nxosv9000-9-2-3
+    ram: 8192
+    cpus: 4
+    tags: []
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        slot: 0
+        label: mgmt0
+        type: physical
+      - id: i2
+        slot: 1
+        label: Ethernet1/1
+        type: physical
+      - id: i3
+        slot: 2
+        label: Ethernet1/2
+        type: physical
+      - id: i4
+        slot: 3
+        label: Ethernet1/3
+        type: physical
+      - id: i5
+        slot: 4
+        label: Ethernet1/4
+        type: physical
+  - id: n12
+    label: ext-conn-1
+    node_definition: external_connector
+    x: 250
+    y: -150
+    configuration: bridge1
+    tags: []
+    interfaces:
+      - id: i0
+        slot: 0
+        label: port
+        type: physical
+  - id: n13
+    label: unmanaged-switch-1
+    node_definition: unmanaged_switch
+    x: 250
+    y: -50
+    configuration: ''
+    tags: []
+    interfaces:
+      - id: i0
+        slot: 0
+        label: port0
+        type: physical
+      - id: i1
+        slot: 1
+        label: port1
+        type: physical
+      - id: i2
+        slot: 2
+        label: port2
+        type: physical
+      - id: i3
+        slot: 3
+        label: port3
+        type: physical
+      - id: i4
+        slot: 4
+        label: port4
+        type: physical
+      - id: i5
+        slot: 5
+        label: port5
+        type: physical
+      - id: i6
+        slot: 6
+        label: port6
+        type: physical
+      - id: i7
+        slot: 7
+        label: port7
+        type: physical
+links:
+  - id: l0
+    i1: i1
+    n1: n2
+    i2: i1
+    n2: n0
+  - id: l2
+    i1: i0
+    n1: n2
+    i2: i0
+    n2: n3
+  - id: l1
+    i1: i1
+    n1: n1
+    i2: i2
+    n2: n2
+  - id: l3
+    i1: i2
+    n1: n0
+    i2: i2
+    n2: n4
+  - id: l4
+    i1: i3
+    n1: n0
+    i2: i2
+    n2: n5
+  - id: l5
+    i1: i2
+    n1: n1
+    i2: i3
+    n2: n4
+  - id: l6
+    i1: i3
+    n1: n1
+    i2: i3
+    n2: n5
+  - id: l7
+    i1: i1
+    n1: n4
+    i2: i3
+    n2: n2
+  - id: l8
+    i1: i1
+    n1: n5
+    i2: i4
+    n2: n2
+  - id: l9
+    i1: i4
+    n1: n4
+    i2: i2
+    n2: n6
+  - id: l11
+    i1: i4
+    n1: n5
+    i2: i3
+    n2: n6
+  - id: l13
+    i1: i2
+    n1: n10
+    i2: i2
+    n2: n8
+  - id: l14
+    i1: i3
+    n1: n10
+    i2: i2
+    n2: n9
+  - id: l15
+    i1: i2
+    n1: n11
+    i2: i3
+    n2: n8
+  - id: l16
+    i1: i3
+    n1: n11
+    i2: i3
+    n2: n9
+  - id: l17
+    i1: i4
+    n1: n8
+    i2: i4
+    n2: n6
+  - id: l10
+    i1: i5
+    n1: n4
+    i2: i2
+    n2: n7
+  - id: l12
+    i1: i5
+    n1: n5
+    i2: i3
+    n2: n7
+  - id: l18
+    i1: i5
+    n1: n8
+    i2: i4
+    n2: n7
+  - id: l19
+    i1: i4
+    n1: n9
+    i2: i5
+    n2: n6
+  - id: l20
+    i1: i5
+    n1: n9
+    i2: i5
+    n2: n7
+  - id: l21
+    i1: i1
+    n1: n6
+    i2: i5
+    n2: n2
+  - id: l22
+    i1: i1
+    n1: n8
+    i2: i0
+    n2: n13
+  - id: l23
+    i1: i1
+    n1: n9
+    i2: i1
+    n2: n13
+  - id: l24
+    i1: i1
+    n1: n10
+    i2: i2
+    n2: n13
+  - id: l25
+    i1: i1
+    n1: n11
+    i2: i3
+    n2: n13
+  - id: l26
+    i1: i1
+    n1: n7
+    i2: i4
+    n2: n13
+  - id: l27
+    i1: i5
+    n1: n13
+    i2: i0
+    n2: n12
