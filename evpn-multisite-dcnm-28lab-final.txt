@@ -1392,8 +1392,8 @@ nodes:
     configuration: |2-
 
       !Command: show running-config
-      !Running configuration last done at: Wed Mar 25 04:26:02 2020
-      !Time: Wed Mar 25 04:26:05 2020
+      !Running configuration last done at: Wed Mar 25 08:45:59 2020
+      !Time: Wed Mar 25 08:46:02 2020
 
       version 9.2(3) Bios:version
       hostname site2-bgwspine1
@@ -1407,11 +1407,11 @@ nodes:
         limit-resource m6route-mem minimum 8 maximum 8
 
       username admin password 5 $5$vtXXqzdl$p8iZezeVwt1cqkMbhfPplqpBK0Z3V05WyslryUAio8/  role network-admin
-      username cisco password 5 $5$jh3LNGvO$g7FXPbraazMSjO9/Ez3aPg3NTXGI75m3B8JCMuDpKk7  role network-admin
+      username cisco password 5 $5$7/PZvpR6$JVbkRhUP.Kr4MoDCqLmM5Xm8w9Mv9JhrG69YOcMlBN4  role network-admin
       username cisco passphrase  lifetime 99999 warntime 14 gracetime 3
       ip domain-lookup
       snmp-server user admin network-admin auth md5 0x9727f26958b134c66511ecae825f5cd5 priv 0x9727f26958b134c66511ecae825f5cd5 localizedkey
-      snmp-server user cisco network-admin auth md5 0x7775459e7c3a9e3977149c7b7f9edcf9 priv 0x7775459e7c3a9e3977149c7b7f9edcf9 localizedkey
+      snmp-server user cisco network-admin auth md5 0xad18df00b37a461d192416d1142596ed priv 0xad18df00b37a461d192416d1142596ed localizedkey
       rmon event 1 description FATAL(1) owner PMON@FATAL
       rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
       rmon event 3 description ERROR(3) owner PMON@ERROR
@@ -1724,8 +1724,8 @@ nodes:
     configuration: |2-
 
       !Command: show running-config
-      !Running configuration last done at: Wed Mar 25 04:26:48 2020
-      !Time: Wed Mar 25 04:26:50 2020
+      !Running configuration last done at: Wed Mar 25 08:45:58 2020
+      !Time: Wed Mar 25 08:46:01 2020
 
       version 9.2(3) Bios:version
       hostname site2-bgpspine2
@@ -1739,11 +1739,11 @@ nodes:
         limit-resource m6route-mem minimum 8 maximum 8
 
       username admin password 5 $5$slnLAAUF$DYR70eDjNigiCM5JVXM1CGdmyUYXKZDY3yh14fsYOA4  role network-admin
-      username cisco password 5 $5$wKRh2HAI$JVHowZdhcFRhLxebLnO9ik.npyryuyroVnHBJGxfcx4  role network-admin
+      username cisco password 5 $5$OrMnFmtG$aAEOdc12WcpViDuht3kADFSRdyWwkO6VulXgKrDa2zC  role network-admin
       username cisco passphrase  lifetime 99999 warntime 14 gracetime 3
       ip domain-lookup
       snmp-server user admin network-admin auth md5 0xe8558af69e558fc12a04287dec0b3c43 priv 0xe8558af69e558fc12a04287dec0b3c43 localizedkey
-      snmp-server user cisco network-admin auth md5 0x124309597e80a262c3473019859d7534 priv 0x124309597e80a262c3473019859d7534 localizedkey
+      snmp-server user cisco network-admin auth md5 0x71e460e3bbd299b4d21d0a29bde85280 priv 0x71e460e3bbd299b4d21d0a29bde85280 localizedkey
       rmon event 1 description FATAL(1) owner PMON@FATAL
       rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
       rmon event 3 description ERROR(3) owner PMON@ERROR
@@ -2056,8 +2056,8 @@ nodes:
     configuration: |2-
 
       !Command: show running-config
-      !Running configuration last done at: Wed Mar 25 04:26:54 2020
-      !Time: Wed Mar 25 04:26:57 2020
+      !Running configuration last done at: Wed Mar 25 08:45:59 2020
+      !Time: Wed Mar 25 08:46:01 2020
 
       version 9.2(3) Bios:version
       hostname site2-leaf1
@@ -2071,11 +2071,11 @@ nodes:
         limit-resource m6route-mem minimum 8 maximum 8
 
       username admin password 5 $5$36Ab28Rj$cmRWj1Xay/JfGPeN3Gj0WdX0v7yKyikLl0TAF773l92  role network-admin
-      username cisco password 5 $5$YbFw7qP/$H8QjJzpytUzO5V0CVgQDjrgHH6u3eAGfS.aIpIJJni5  role network-admin
+      username cisco password 5 $5$bbr1gCRa$ywpWOa9rYxRRJ9ZRFsDsru9SoPxWps606zK92psw7f6  role network-admin
       username cisco passphrase  lifetime 99999 warntime 14 gracetime 3
       ip domain-lookup
       snmp-server user admin network-admin auth md5 0xd82dc09cd73a02aed37fcd98ece1559d priv 0xd82dc09cd73a02aed37fcd98ece1559d localizedkey
-      snmp-server user cisco network-admin auth md5 0x2acba472d87382f7d6a5f251a4111b32 priv 0x2acba472d87382f7d6a5f251a4111b32 localizedkey
+      snmp-server user cisco network-admin auth md5 0xe096bca5d4bed19f465af17b2f2e6f81 priv 0xe096bca5d4bed19f465af17b2f2e6f81 localizedkey
       rmon event 1 description FATAL(1) owner PMON@FATAL
       rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
       rmon event 3 description ERROR(3) owner PMON@ERROR
@@ -2384,8 +2384,8 @@ nodes:
     configuration: |2-
 
       !Command: show running-config
-      !Running configuration last done at: Wed Mar 25 04:27:16 2020
-      !Time: Wed Mar 25 04:27:19 2020
+      !Running configuration last done at: Wed Mar 25 08:46:00 2020
+      !Time: Wed Mar 25 08:46:02 2020
 
       version 9.2(3) Bios:version
       hostname site2-leaf2
@@ -2399,11 +2399,11 @@ nodes:
         limit-resource m6route-mem minimum 8 maximum 8
 
       username admin password 5 $5$g9.lOEFC$khRXjPsggrr4HaNj3BZxRTk1d9QbTuzeUb5JOy/wAR9  role network-admin
-      username cisco password 5 $5$XlIGLXU0$jsbjOBA2kWMFJtyER3tCVJW6vqzLMRoD2gAbxmcpCl3  role network-admin
+      username cisco password 5 $5$lX/LhmTg$T1/DYYat/0UGjzaRU.EwWxcp5EHoOSoWgSFAESrnLU3  role network-admin
       username cisco passphrase  lifetime 99999 warntime 14 gracetime 3
       ip domain-lookup
       snmp-server user admin network-admin auth md5 0x05fd5a05123e444cb190f4349782c247 priv 0x05fd5a05123e444cb190f4349782c247 localizedkey
-      snmp-server user cisco network-admin auth md5 0x35fc6154ab653e3a9542a3055ed9919e priv 0x35fc6154ab653e3a9542a3055ed9919e localizedkey
+      snmp-server user cisco network-admin auth md5 0xed2a386f0297a87685aed297d9ecca82 priv 0xed2a386f0297a87685aed297d9ecca82 localizedkey
       rmon event 1 description FATAL(1) owner PMON@FATAL
       rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
       rmon event 3 description ERROR(3) owner PMON@ERROR
@@ -3096,8 +3096,8 @@ nodes:
     configuration: |2-
 
       !Command: show running-config
-      !Running configuration last done at: Wed Mar 25 08:24:49 2020
-      !Time: Wed Mar 25 08:24:52 2020
+      !Running configuration last done at: Wed Mar 25 08:42:30 2020
+      !Time: Wed Mar 25 08:42:31 2020
 
       version 9.2(3) Bios:version
       hostname site1-leaf1
@@ -3111,11 +3111,11 @@ nodes:
         limit-resource m6route-mem minimum 8 maximum 8
 
       username admin password 5 $5$FehXJqkf$tYuYRurmyKbWlsh5APyAHLw8PlMZI.AZTXvcRkVDK.8  role network-admin
-      username cisco password 5 $5$ZkEb76T8$/KW1dnlKHckyA9aDLb5mDYUbPhs9m7A6N39fxgWAkQ6  role network-admin
+      username cisco password 5 $5$c8JAhHml$RVWAs0NL8klEO4WDW/O2ZjhP2L6EL3DtQjRhnfVmZ70  role network-admin
       username cisco passphrase  lifetime 99999 warntime 14 gracetime 3
       ip domain-lookup
       snmp-server user admin network-admin auth md5 0x12dee40c1b7d8cc2496dd3d73be7549a priv 0x12dee40c1b7d8cc2496dd3d73be7549a localizedkey
-      snmp-server user cisco network-admin auth md5 0x937be12e601b421033b225bb778584e1 priv 0x937be12e601b421033b225bb778584e1 localizedkey
+      snmp-server user cisco network-admin auth md5 0x384104a5973c4cd92a823240d1e5de23 priv 0x384104a5973c4cd92a823240d1e5de23 localizedkey
       rmon event 1 description FATAL(1) owner PMON@FATAL
       rmon event 2 description CRITICAL(2) owner PMON@CRITICAL
       rmon event 3 description ERROR(3) owner PMON@ERROR
@@ -3127,216 +3127,427 @@ nodes:
       vrf context management
 
       interface Ethernet1/1
+        no switchport
+        no shutdown
 
       interface Ethernet1/2
+        no switchport
+        no shutdown
 
       interface Ethernet1/3
+        no switchport
+        no shutdown
 
       interface Ethernet1/4
+        no switchport
+        no shutdown
 
       interface Ethernet1/5
+        no switchport
+        no shutdown
 
       interface Ethernet1/6
+        no switchport
+        no shutdown
 
       interface Ethernet1/7
+        no switchport
+        no shutdown
 
       interface Ethernet1/8
+        no switchport
+        no shutdown
 
       interface Ethernet1/9
+        no switchport
+        no shutdown
 
       interface Ethernet1/10
+        no switchport
+        no shutdown
 
       interface Ethernet1/11
+        no switchport
+        no shutdown
 
       interface Ethernet1/12
+        no switchport
+        no shutdown
 
       interface Ethernet1/13
+        no switchport
+        no shutdown
 
       interface Ethernet1/14
+        no switchport
+        no shutdown
 
       interface Ethernet1/15
+        no switchport
+        no shutdown
 
       interface Ethernet1/16
+        no switchport
+        no shutdown
 
       interface Ethernet1/17
+        no switchport
+        no shutdown
 
       interface Ethernet1/18
+        no switchport
+        no shutdown
 
       interface Ethernet1/19
+        no switchport
+        no shutdown
 
       interface Ethernet1/20
+        no switchport
+        no shutdown
 
       interface Ethernet1/21
+        no switchport
+        no shutdown
 
       interface Ethernet1/22
+        no switchport
+        no shutdown
 
       interface Ethernet1/23
+        no switchport
+        no shutdown
 
       interface Ethernet1/24
+        no switchport
+        no shutdown
 
       interface Ethernet1/25
+        no switchport
+        no shutdown
 
       interface Ethernet1/26
+        no switchport
+        no shutdown
 
       interface Ethernet1/27
+        no switchport
+        no shutdown
 
       interface Ethernet1/28
+        no switchport
+        no shutdown
 
       interface Ethernet1/29
+        no switchport
+        no shutdown
 
       interface Ethernet1/30
+        no switchport
+        no shutdown
 
       interface Ethernet1/31
+        no switchport
+        no shutdown
 
       interface Ethernet1/32
+        no switchport
+        no shutdown
 
       interface Ethernet1/33
+        no switchport
+        no shutdown
 
       interface Ethernet1/34
+        no switchport
+        no shutdown
 
       interface Ethernet1/35
+        no switchport
+        no shutdown
 
       interface Ethernet1/36
+        no switchport
+        no shutdown
 
       interface Ethernet1/37
+        no switchport
+        no shutdown
 
       interface Ethernet1/38
+        no switchport
+        no shutdown
 
       interface Ethernet1/39
+        no switchport
+        no shutdown
 
       interface Ethernet1/40
+        no switchport
+        no shutdown
 
       interface Ethernet1/41
+        no switchport
+        no shutdown
 
       interface Ethernet1/42
+        no switchport
+        no shutdown
 
       interface Ethernet1/43
+        no switchport
+        no shutdown
 
       interface Ethernet1/44
+        no switchport
+        no shutdown
 
       interface Ethernet1/45
+        no switchport
+        no shutdown
 
       interface Ethernet1/46
+        no switchport
+        no shutdown
 
       interface Ethernet1/47
+        no switchport
+        no shutdown
 
       interface Ethernet1/48
+        no switchport
+        no shutdown
 
       interface Ethernet1/49
+        no switchport
+        no shutdown
 
       interface Ethernet1/50
+        no switchport
+        no shutdown
 
       interface Ethernet1/51
+        no switchport
+        no shutdown
 
       interface Ethernet1/52
+        no switchport
+        no shutdown
 
       interface Ethernet1/53
+        no switchport
+        no shutdown
 
       interface Ethernet1/54
+        no switchport
+        no shutdown
 
       interface Ethernet1/55
+        no switchport
+        no shutdown
 
       interface Ethernet1/56
+        no switchport
+        no shutdown
 
       interface Ethernet1/57
+        no switchport
+        no shutdown
 
       interface Ethernet1/58
+        no switchport
+        no shutdown
 
       interface Ethernet1/59
+        no switchport
+        no shutdown
 
       interface Ethernet1/60
+        no switchport
+        no shutdown
 
       interface Ethernet1/61
+        no switchport
+        no shutdown
 
       interface Ethernet1/62
+        no switchport
+        no shutdown
 
       interface Ethernet1/63
+        no switchport
+        no shutdown
 
       interface Ethernet1/64
+        no switchport
+        no shutdown
 
       interface Ethernet1/65
+        no switchport
+        no shutdown
 
       interface Ethernet1/66
+        no switchport
+        no shutdown
 
       interface Ethernet1/67
+        no switchport
+        no shutdown
 
       interface Ethernet1/68
+        no switchport
+        no shutdown
 
       interface Ethernet1/69
+        no switchport
+        no shutdown
 
       interface Ethernet1/70
+        no switchport
+        no shutdown
 
       interface Ethernet1/71
+        no switchport
+        no shutdown
 
       interface Ethernet1/72
+        no switchport
+        no shutdown
 
       interface Ethernet1/73
+        no switchport
+        no shutdown
 
       interface Ethernet1/74
+        no switchport
+        no shutdown
 
       interface Ethernet1/75
+        no switchport
+        no shutdown
 
       interface Ethernet1/76
+        no switchport
+        no shutdown
 
       interface Ethernet1/77
+        no switchport
+        no shutdown
 
       interface Ethernet1/78
+        no switchport
+        no shutdown
 
       interface Ethernet1/79
+        no switchport
+        no shutdown
 
       interface Ethernet1/80
+        no switchport
+        no shutdown
 
       interface Ethernet1/81
+        no switchport
+        no shutdown
 
       interface Ethernet1/82
+        no switchport
+        no shutdown
 
       interface Ethernet1/83
+        no switchport
+        no shutdown
 
       interface Ethernet1/84
+        no switchport
+        no shutdown
 
       interface Ethernet1/85
+        no switchport
+        no shutdown
 
       interface Ethernet1/86
+        no switchport
+        no shutdown
 
       interface Ethernet1/87
+        no switchport
+        no shutdown
 
       interface Ethernet1/88
+        no switchport
+        no shutdown
 
       interface Ethernet1/89
+        no switchport
+        no shutdown
 
       interface Ethernet1/90
+        no switchport
+        no shutdown
 
       interface Ethernet1/91
+        no switchport
+        no shutdown
 
       interface Ethernet1/92
+        no switchport
+        no shutdown
 
       interface Ethernet1/93
+        no switchport
+        no shutdown
 
       interface Ethernet1/94
+        no switchport
+        no shutdown
 
       interface Ethernet1/95
+        no switchport
+        no shutdown
 
       interface Ethernet1/96
+        no switchport
+        no shutdown
 
       interface Ethernet1/97
+        no switchport
+        no shutdown
 
       interface Ethernet1/98
+        no switchport
+        no shutdown
 
       interface Ethernet1/99
+        no switchport
+        no shutdown
 
       interface Ethernet1/100
+        no switchport
+        no shutdown
 
       interface Ethernet1/101
+        no switchport
+        no shutdown
 
       interface Ethernet1/102
+        no switchport
+        no shutdown
 
       interface Ethernet1/103
+        no switchport
+        no shutdown
 
       interface Ethernet1/104
+        no switchport
+        no shutdown
 
       interface Ethernet1/105
+        no switchport
+        no shutdown
 
       interface Ethernet1/106
+        no switchport
 
       interface Ethernet1/107
 
